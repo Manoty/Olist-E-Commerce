@@ -7,81 +7,65 @@ st.set_page_config(page_title="Olist Analytics", layout="wide")
 
 conn = duckdb.connect('olist.duckdb')
 
-st.title("📊 Olist E-Commerce Analytics – Extended")
+st.title("📊 Olist E-Commerce Analytics")
 
-# ============================================================================
-# Customer Lifetime Value
-# ============================================================================
-st.header("💰 Customer Lifetime Value")
+# Customer Metrics
+st.header("💰 Customer Metrics")
 
-ltv = conn.execute("""
-  SELECT 
-    COUNT(*) as total_customers,
-    ROUND(AVG(SUM(oi.price + oi.freight_value)), 2) as avg_ltv
-  FROM raw_customers c
-  LEFT JOIN raw_orders o ON c.customer_id = o.customer_id
-  LEFT JOIN raw_order_items oi ON o.order_id = oi.order_id
-  GROUP BY c.customer_id
-""").fetchdf()
+total_customers = conn.execute("SELECT COUNT(DISTINCT customer_id) FROM raw_customers").fetchone()[0]
+total_orders = conn.execute("SELECT COUNT(*) FROM raw_orders").fetchone()[0]
+avg_order_value = conn.execute("SELECT ROUND(AVG(price + freight_value), 2) FROM raw_order_items").fetchone()[0]
 
-st.metric("Average Customer LTV", f"${ltv['avg_ltv'].mean():.2f}")
+col1, col2, col3 = st.columns(3)
+with col1:
+  st.metric("Total Customers", f"{total_customers:,.0f}")
+with col2:
+  st.metric("Total Orders", f"{total_orders:,.0f}")
+with col3:
+  st.metric("Avg Order Value", f"${avg_order_value}")
 
-# ============================================================================
 # Review Sentiment
-# ============================================================================
-st.header("⭐ Review Sentiment Analysis")
+st.header("⭐ Review Sentiment")
 
 sentiment = conn.execute("""
   SELECT 
     CASE 
-      WHEN review_score >= 4 THEN 'Positive (4-5)'
-      WHEN review_score = 3 THEN 'Neutral (3)'
-      ELSE 'Negative (1-2)'
+      WHEN review_score >= 4 THEN 'Positive'
+      WHEN review_score = 3 THEN 'Neutral'
+      ELSE 'Negative'
     END as sentiment,
-    COUNT(*) as review_count
+    COUNT(*) as count
   FROM raw_order_reviews
   GROUP BY sentiment
 """).fetchdf()
 
-fig = px.pie(sentiment, values='review_count', names='sentiment', 
-             title="Review Distribution by Sentiment",
-             color_discrete_map={'Positive (4-5)': '#2ecc71', 'Neutral (3)': '#f39c12', 'Negative (1-2)': '#e74c3c'})
+fig = px.pie(sentiment, values='count', names='sentiment', title="Reviews by Sentiment")
 st.plotly_chart(fig, width='stretch')
 
-# ============================================================================
-# Seller Performance
-# ============================================================================
-st.header("🏆 Seller Performance")
+# Top Sellers
+st.header("🏆 Top Sellers by Revenue")
 
 sellers = conn.execute("""
   SELECT 
     s.seller_id,
-    s.seller_city,
-    COUNT(DISTINCT oi.order_id) as orders_sold,
-    ROUND(SUM(oi.price + oi.freight_value), 2) as total_revenue,
-    ROUND(AVG(CAST(r.review_score AS FLOAT)), 2) as avg_review_score
+    COUNT(DISTINCT oi.order_id) as orders,
+    ROUND(SUM(oi.price + oi.freight_value), 2) as revenue
   FROM raw_sellers s
   LEFT JOIN raw_order_items oi ON s.seller_id = oi.seller_id
-  LEFT JOIN raw_order_reviews r ON oi.order_id = r.order_id
-  GROUP BY s.seller_id, s.seller_city
-  ORDER BY total_revenue DESC
-  LIMIT 15
+  GROUP BY s.seller_id
+  ORDER BY revenue DESC
+  LIMIT 10
 """).fetchdf()
 
-fig = px.scatter(sellers, x='orders_sold', y='avg_review_score', 
-                 size='total_revenue', hover_data=['seller_city'],
-                 title="Sellers: Orders vs Quality (bubble = revenue)",
-                 labels={'orders_sold': 'Orders', 'avg_review_score': 'Avg Rating'})
+fig = px.bar(sellers, x='seller_id', y='revenue', title="Top 10 Sellers by Revenue")
 st.plotly_chart(fig, width='stretch')
 
-# ============================================================================
-# Category Performance
-# ============================================================================
-st.header("📦 Product Category Insights")
+# Categories
+st.header("📦 Top Product Categories")
 
 categories = conn.execute("""
   SELECT 
-    p.product_category_name_english as category,
+    p.product_category_name_english,
     COUNT(DISTINCT oi.order_id) as orders,
     ROUND(SUM(oi.price + oi.freight_value), 2) as revenue
   FROM raw_products p
@@ -89,14 +73,28 @@ categories = conn.execute("""
   WHERE p.product_category_name_english IS NOT NULL
   GROUP BY p.product_category_name_english
   ORDER BY revenue DESC
-  LIMIT 12
+  LIMIT 10
 """).fetchdf()
 
-fig = px.bar(categories, x='category', y='revenue', 
-             title="Top Categories by Revenue")
+fig = px.bar(categories, x='product_category_name_english', y='revenue', title="Top 10 Categories by Revenue")
+st.plotly_chart(fig, width='stretch')
+
+# Orders by Status
+st.header("📈 Orders by Status")
+
+status = conn.execute("""
+  SELECT 
+    order_status,
+    COUNT(*) as count
+  FROM raw_orders
+  GROUP BY order_status
+  ORDER BY count DESC
+""").fetchdf()
+
+fig = px.bar(status, x='order_status', y='count', title="Orders by Fulfillment Status")
 st.plotly_chart(fig, width='stretch')
 
 st.divider()
-st.caption("✓ Extended Analytics | LTV • Sentiment • Seller Quality • Categories")
+st.caption("✓ Olist E-Commerce Analytics Dashboard | dbt + DuckDB + Streamlit")
 
 conn.close()
