@@ -35,7 +35,7 @@ with source as (
     order_estimated_delivery_date::timestamp as order_estimated_delivery_at,
     case 
       when order_delivered_customer_date is not null 
-      then (order_delivered_customer_date::timestamp - order_purchase_timestamp::timestamp).days
+      then date_diff('day', order_purchase_timestamp::timestamp, order_delivered_customer_date::timestamp)
       else null 
     end as days_to_delivery,
     case

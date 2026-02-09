@@ -11,7 +11,7 @@ with source as (
     seller_zip_code_prefix,
     seller_city,
     seller_state
-  from {{ source('olist', 'raw_sellers') }}
+  from main.raw_sellers
 )
 
 select * from source

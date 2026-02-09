@@ -12,7 +12,7 @@ with source as (
     customer_zip_code_prefix,
     customer_city,
     customer_state
-  from {{ source('olist', 'raw_customers') }}
+  from main.raw_customers
 )
 
 select

@@ -16,7 +16,7 @@ with source as (
     payment_type,
     payment_installments,
     payment_value
-  from "olist"."main"."raw_order_payments"
+  from main.raw_order_payments
 )
 
 select * from source

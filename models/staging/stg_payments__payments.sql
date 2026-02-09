@@ -12,7 +12,7 @@ with source as (
     payment_type,
     payment_installments,
     payment_value
-  from {{ source('olist', 'raw_order_payments') }}
+  from main.raw_order_payments
 )
 
 select * from source

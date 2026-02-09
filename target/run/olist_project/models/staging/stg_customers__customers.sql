@@ -16,7 +16,7 @@ with source as (
     customer_zip_code_prefix,
     customer_city,
     customer_state
-  from "olist"."main"."raw_customers"
+  from main.raw_customers
 )
 
 select

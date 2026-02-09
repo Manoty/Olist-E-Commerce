@@ -6,7 +6,7 @@ with source as (
     seller_zip_code_prefix,
     seller_city,
     seller_state
-  from "olist"."main"."raw_sellers"
+  from main.raw_sellers
 )
 
 select * from source

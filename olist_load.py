@@ -11,7 +11,7 @@ data_dir = "./data/raw"  # Where your CSV files are
 os.makedirs(data_dir, exist_ok=True)
 
 # Initialize DuckDB connection
-conn = duckdb.connect("olist.duckdb")
+conn = duckdb.connect("../olist.duckdb")
 
 print("=" * 60)
 print("OLIST E-COMMERCE DATA LOAD")

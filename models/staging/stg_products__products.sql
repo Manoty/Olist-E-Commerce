@@ -23,7 +23,7 @@ with products as (
   select
     product_category_name,
     product_category_name_english
-  from {{ source('olist', 'raw_product_category_translation') }}
+  from main.raw_product_category_translation
 )
 
 , joined as (
