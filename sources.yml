@@ -1,0 +1,79 @@
+version: 2
+
+sources:
+  - name: olist
+    description: Raw Olist Brazilian e-commerce dataset
+    database: olist
+    schema: main
+    tables:
+      - name: raw_customers
+        description: Customer dimension with location info
+        columns:
+          - name: customer_id
+            description: Unique customer identifier
+            tests:
+              - unique
+              - not_null
+
+      - name: raw_orders
+        description: Orders with timestamps and status
+        columns:
+          - name: order_id
+            description: Unique order identifier
+            tests:
+              - unique
+              - not_null
+          - name: customer_id
+            description: Foreign key to customers
+
+      - name: raw_order_items
+        description: Line items within orders
+        columns:
+          - name: order_id
+            description: Foreign key to orders
+          - name: order_item_seq_no
+            description: Sequence number within order
+
+      - name: raw_order_payments
+        description: Payment records (multiple per order possible)
+        columns:
+          - name: order_id
+            description: Foreign key to orders
+
+      - name: raw_order_reviews
+        description: Customer reviews and ratings
+        columns:
+          - name: review_id
+            description: Unique review identifier
+            tests:
+              - unique
+
+      - name: raw_products
+        description: Product catalog
+        columns:
+          - name: product_id
+            description: Unique product identifier
+            tests:
+              - unique
+              - not_null
+
+      - name: raw_sellers
+        description: Seller information
+        columns:
+          - name: seller_id
+            description: Unique seller identifier
+            tests:
+              - unique
+              - not_null
+
+      - name: raw_geolocation
+        description: Brazilian geolocation reference
+        columns:
+          - name: zip_code_prefix
+            description: Zip code prefix for location mapping
+
+      - name: raw_product_category_translation
+        description: Product category name translation
+        columns:
+          - name: product_category_name
+            description: Portuguese category name
