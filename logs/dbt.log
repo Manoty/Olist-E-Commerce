@@ -14370,3 +14370,1519 @@ drop table if exists "olist"."analytics_marts"."dim_customers__dbt_backup" casca
 [0m13:40:15.875993 [debug] [MainThread]: Command `dbt run` succeeded at 13:40:15.875993 after 5.41 seconds
 [0m13:40:15.876987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296438DBF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029642F22C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002963CC39990>]}
 [0m13:40:15.877984 [debug] [MainThread]: Flushing usage events
+[0m13:47:55.103258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A630F850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A64EB610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A64E9790>]}
+
+
+============================== 13:47:55.117972 | ee28b8b7-99d0-49cf-a871-f4a16df9611c ==============================
+[0m13:47:55.117972 [info ] [MainThread]: Running with dbt=1.7.9
+[0m13:47:55.119968 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Evans Moseti\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\kev\\Olist Ecommerce\\olist\\logs'}
+[0m13:47:55.340345 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m13:47:55.341340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A6669090>]}
+[0m13:47:55.540106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A657CE90>]}
+[0m13:47:55.679691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A64C9190>]}
+[0m13:47:55.682171 [info ] [MainThread]: Registered adapter: duckdb=1.7.5
+[0m13:47:55.704955 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m13:47:55.845017 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:47:55.846974 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:47:55.860978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A7679DD0>]}
+[0m13:47:55.891020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A77D6910>]}
+[0m13:47:55.891020 [info ] [MainThread]: Found 9 seeds, 9 models, 11 tests, 9 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m13:47:55.891020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A7943F50>]}
+[0m13:47:55.899595 [info ] [MainThread]: 
+[0m13:47:55.899595 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:47:55.899595 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist'
+[0m13:47:55.909528 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist'
+[0m13:47:55.936634 [debug] [ThreadPool]: Using duckdb connection "list_olist"
+[0m13:47:55.940586 [debug] [ThreadPool]: Using duckdb connection "list_olist"
+[0m13:47:55.941584 [debug] [ThreadPool]: On list_olist: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"olist"'
+    
+  
+  
+[0m13:47:55.942583 [debug] [ThreadPool]: On list_olist: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"olist"'
+    
+  
+  
+[0m13:47:55.944576 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:47:55.945575 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:47:55.970723 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:55.971759 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:55.974628 [debug] [ThreadPool]: On list_olist: Close
+[0m13:47:55.977581 [debug] [ThreadPool]: On list_olist: Close
+[0m13:47:55.983566 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist, now create_olist_analytics_staging)
+[0m13:47:55.984563 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist, now create_olist_analytics_marts)
+[0m13:47:55.985561 [debug] [ThreadPool]: Creating schema "database: "olist"
+schema: "analytics_staging"
+"
+[0m13:47:55.987557 [debug] [ThreadPool]: Creating schema "database: "olist"
+schema: "analytics_marts"
+"
+[0m13:47:56.000559 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_staging"
+[0m13:47:56.005508 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_marts"
+[0m13:47:56.006542 [debug] [ThreadPool]: On create_olist_analytics_staging: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "create_olist_analytics_staging"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='olist'
+        and type='sqlite'
+    
+  
+[0m13:47:56.007504 [debug] [ThreadPool]: On create_olist_analytics_marts: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "create_olist_analytics_marts"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='olist'
+        and type='sqlite'
+    
+  
+[0m13:47:56.008500 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:47:56.009497 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:47:56.026450 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.027449 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.030443 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_marts"
+[0m13:47:56.032471 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_staging"
+[0m13:47:56.033431 [debug] [ThreadPool]: On create_olist_analytics_marts: BEGIN
+[0m13:47:56.034429 [debug] [ThreadPool]: On create_olist_analytics_staging: BEGIN
+[0m13:47:56.036426 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.037422 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.038420 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_staging"
+[0m13:47:56.039418 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_marts"
+[0m13:47:56.040415 [debug] [ThreadPool]: On create_olist_analytics_staging: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "create_olist_analytics_staging"} */
+
+    
+    
+        create schema if not exists "olist"."analytics_staging"
+    
+[0m13:47:56.041411 [debug] [ThreadPool]: On create_olist_analytics_marts: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "create_olist_analytics_marts"} */
+
+    
+    
+        create schema if not exists "olist"."analytics_marts"
+    
+[0m13:47:56.046446 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.047449 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.049443 [debug] [ThreadPool]: On create_olist_analytics_marts: COMMIT
+[0m13:47:56.051475 [debug] [ThreadPool]: On create_olist_analytics_staging: COMMIT
+[0m13:47:56.052434 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_marts"
+[0m13:47:56.053440 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_staging"
+[0m13:47:56.054430 [debug] [ThreadPool]: On create_olist_analytics_marts: COMMIT
+[0m13:47:56.054430 [debug] [ThreadPool]: On create_olist_analytics_staging: COMMIT
+[0m13:47:56.056425 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.057427 [debug] [ThreadPool]: On create_olist_analytics_marts: Close
+[0m13:47:56.058418 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.060414 [debug] [ThreadPool]: On create_olist_analytics_staging: Close
+[0m13:47:56.068431 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist_analytics_staging'
+[0m13:47:56.069391 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist_analytics_marts'
+[0m13:47:56.081392 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_staging"
+[0m13:47:56.082357 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist_analytics'
+[0m13:47:56.087377 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_marts"
+[0m13:47:56.089336 [debug] [ThreadPool]: On list_olist_analytics_staging: BEGIN
+[0m13:47:56.093361 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics"
+[0m13:47:56.095321 [debug] [ThreadPool]: On list_olist_analytics_marts: BEGIN
+[0m13:47:56.096321 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:47:56.097315 [debug] [ThreadPool]: On list_olist_analytics: BEGIN
+[0m13:47:56.098313 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:47:56.116556 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:47:56.117554 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.119549 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.120549 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.121546 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_staging"
+[0m13:47:56.123537 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_marts"
+[0m13:47:56.124541 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics"
+[0m13:47:56.125532 [debug] [ThreadPool]: On list_olist_analytics_staging: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist_analytics_staging"} */
+select
+      'olist' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'analytics_staging'
+    and table_catalog = 'olist'
+  
+[0m13:47:56.126528 [debug] [ThreadPool]: On list_olist_analytics_marts: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist_analytics_marts"} */
+select
+      'olist' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'analytics_marts'
+    and table_catalog = 'olist'
+  
+[0m13:47:56.127526 [debug] [ThreadPool]: On list_olist_analytics: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist_analytics"} */
+select
+      'olist' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'analytics'
+    and table_catalog = 'olist'
+  
+[0m13:47:56.215504 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.216501 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.229466 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:47:56.233458 [debug] [ThreadPool]: On list_olist_analytics: ROLLBACK
+[0m13:47:56.235451 [debug] [ThreadPool]: On list_olist_analytics_marts: ROLLBACK
+[0m13:47:56.237446 [debug] [ThreadPool]: On list_olist_analytics_staging: ROLLBACK
+[0m13:47:56.240455 [debug] [ThreadPool]: Failed to rollback 'list_olist_analytics'
+[0m13:47:56.241434 [debug] [ThreadPool]: Failed to rollback 'list_olist_analytics_marts'
+[0m13:47:56.242432 [debug] [ThreadPool]: Failed to rollback 'list_olist_analytics_staging'
+[0m13:47:56.242432 [debug] [ThreadPool]: On list_olist_analytics: Close
+[0m13:47:56.243430 [debug] [ThreadPool]: On list_olist_analytics_marts: Close
+[0m13:47:56.244427 [debug] [ThreadPool]: On list_olist_analytics_staging: Close
+[0m13:47:56.256396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A7754D50>]}
+[0m13:47:56.257392 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:47:56.258390 [debug] [MainThread]: On master: BEGIN
+[0m13:47:56.259387 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:47:56.275344 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m13:47:56.276342 [debug] [MainThread]: On master: COMMIT
+[0m13:47:56.277371 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:47:56.278335 [debug] [MainThread]: On master: COMMIT
+[0m13:47:56.279334 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m13:47:56.281330 [debug] [MainThread]: On master: Close
+[0m13:47:56.284319 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:47:56.286314 [info ] [MainThread]: 
+[0m13:47:56.293367 [debug] [Thread-1 (]: Began running node model.olist_project.stg_customers__customers
+[0m13:47:56.294365 [debug] [Thread-2 (]: Began running node model.olist_project.stg_order_items__order_items
+[0m13:47:56.295363 [debug] [Thread-3 (]: Began running node model.olist_project.stg_orders__orders
+[0m13:47:56.296359 [debug] [Thread-4 (]: Began running node model.olist_project.stg_payments__payments
+[0m13:47:56.297357 [info ] [Thread-1 (]: 1 of 9 START sql table model analytics_staging.stg_customers__customers ........ [RUN]
+[0m13:47:56.299353 [info ] [Thread-2 (]: 2 of 9 START sql table model analytics_staging.stg_order_items__order_items .... [RUN]
+[0m13:47:56.301348 [info ] [Thread-3 (]: 3 of 9 START sql table model analytics_staging.stg_orders__orders .............. [RUN]
+[0m13:47:56.306336 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.olist_project.stg_customers__customers'
+[0m13:47:56.303342 [info ] [Thread-4 (]: 4 of 9 START sql table model analytics_staging.stg_payments__payments .......... [RUN]
+[0m13:47:56.308331 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.olist_project.stg_order_items__order_items'
+[0m13:47:56.311322 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.olist_project.stg_orders__orders'
+[0m13:47:56.313440 [debug] [Thread-1 (]: Began compiling node model.olist_project.stg_customers__customers
+[0m13:47:56.316432 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.olist_project.stg_payments__payments'
+[0m13:47:56.317429 [debug] [Thread-2 (]: Began compiling node model.olist_project.stg_order_items__order_items
+[0m13:47:56.318428 [debug] [Thread-3 (]: Began compiling node model.olist_project.stg_orders__orders
+[0m13:47:56.336378 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_project.stg_customers__customers"
+[0m13:47:56.337376 [debug] [Thread-4 (]: Began compiling node model.olist_project.stg_payments__payments
+[0m13:47:56.345353 [debug] [Thread-2 (]: Writing injected SQL for node "model.olist_project.stg_order_items__order_items"
+[0m13:47:56.353332 [debug] [Thread-3 (]: Writing injected SQL for node "model.olist_project.stg_orders__orders"
+[0m13:47:56.359315 [debug] [Thread-4 (]: Writing injected SQL for node "model.olist_project.stg_payments__payments"
+[0m13:47:56.361311 [debug] [Thread-1 (]: Timing info for model.olist_project.stg_customers__customers (compile): 13:47:56.320422 => 13:47:56.360313
+[0m13:47:56.363414 [debug] [Thread-2 (]: Timing info for model.olist_project.stg_order_items__order_items (compile): 13:47:56.338371 => 13:47:56.362414
+[0m13:47:56.365410 [debug] [Thread-1 (]: Began executing node model.olist_project.stg_customers__customers
+[0m13:47:56.366407 [debug] [Thread-2 (]: Began executing node model.olist_project.stg_order_items__order_items
+[0m13:47:56.368404 [debug] [Thread-3 (]: Timing info for model.olist_project.stg_orders__orders (compile): 13:47:56.346350 => 13:47:56.367403
+[0m13:47:56.369407 [debug] [Thread-4 (]: Timing info for model.olist_project.stg_payments__payments (compile): 13:47:56.354329 => 13:47:56.368404
+[0m13:47:56.435398 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_project.stg_customers__customers"
+[0m13:47:56.441382 [debug] [Thread-2 (]: Writing runtime sql for node "model.olist_project.stg_order_items__order_items"
+[0m13:47:56.442380 [debug] [Thread-3 (]: Began executing node model.olist_project.stg_orders__orders
+[0m13:47:56.443377 [debug] [Thread-4 (]: Began executing node model.olist_project.stg_payments__payments
+[0m13:47:56.453350 [debug] [Thread-3 (]: Writing runtime sql for node "model.olist_project.stg_orders__orders"
+[0m13:47:56.454348 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_customers__customers"
+[0m13:47:56.463327 [debug] [Thread-4 (]: Writing runtime sql for node "model.olist_project.stg_payments__payments"
+[0m13:47:56.465321 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_order_items__order_items"
+[0m13:47:56.467315 [debug] [Thread-1 (]: On model.olist_project.stg_customers__customers: BEGIN
+[0m13:47:56.468311 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.stg_orders__orders"
+[0m13:47:56.470306 [debug] [Thread-2 (]: On model.olist_project.stg_order_items__order_items: BEGIN
+[0m13:47:56.471303 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:47:56.472303 [debug] [Thread-3 (]: On model.olist_project.stg_orders__orders: BEGIN
+[0m13:47:56.473299 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.stg_payments__payments"
+[0m13:47:56.475293 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:47:56.490253 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:47:56.491261 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.493244 [debug] [Thread-4 (]: On model.olist_project.stg_payments__payments: BEGIN
+[0m13:47:56.494245 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.496236 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.497233 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_customers__customers"
+[0m13:47:56.499229 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:47:56.500225 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_order_items__order_items"
+[0m13:47:56.501225 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.stg_orders__orders"
+[0m13:47:56.502221 [debug] [Thread-1 (]: On model.olist_project.stg_customers__customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_customers__customers"} */
+
+  
+    
+    
+
+    create  table
+      "olist"."analytics_staging"."stg_customers__customers__dbt_tmp"
+  
+    as (
+      
+
+with source as (
+  select
+    customer_id,
+    customer_unique_id,
+    customer_zip_code_prefix,
+    customer_city,
+    customer_state
+  from main.raw_customers
+)
+
+select
+  customer_id,
+  customer_unique_id,
+  customer_zip_code_prefix,
+  customer_city,
+  customer_state
+from source
+    );
+  
+  
+[0m13:47:56.504217 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.505214 [debug] [Thread-2 (]: On model.olist_project.stg_order_items__order_items: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_order_items__order_items"} */
+
+  
+    
+    
+
+    create  table
+      "olist"."analytics_staging"."stg_order_items__order_items__dbt_tmp"
+  
+    as (
+      
+
+select
+  order_item_id,
+  order_id,
+  product_id,
+  seller_id,
+  shipping_limit_date,
+  price,
+  freight_value,
+  price + freight_value as item_total_value
+from "olist"."main"."raw_order_items"
+    );
+  
+  
+[0m13:47:56.507208 [debug] [Thread-3 (]: On model.olist_project.stg_orders__orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_orders__orders"} */
+
+  
+    
+    
+
+    create  table
+      "olist"."analytics_staging"."stg_orders__orders__dbt_tmp"
+  
+    as (
+      
+
+with source as (
+  select
+    order_id,
+    customer_id,
+    order_status,
+    order_purchase_timestamp,
+    order_approved_at,
+    order_delivered_carrier_date,
+    order_delivered_customer_date,
+    order_estimated_delivery_date
+  from "olist"."main"."raw_orders"
+)
+
+
+, cleaned as (
+  select
+    order_id,
+    customer_id,
+    order_status,
+    order_purchase_timestamp::timestamp as order_purchase_at,
+    order_approved_at::timestamp as order_approved_at,
+    order_delivered_carrier_date::timestamp as order_delivered_carrier_at,
+    order_delivered_customer_date::timestamp as order_delivered_customer_at,
+    order_estimated_delivery_date::timestamp as order_estimated_delivery_at,
+    case 
+      when order_delivered_customer_date is not null 
+      then date_diff('day', order_purchase_timestamp::timestamp, order_delivered_customer_date::timestamp)
+      else null 
+    end as days_to_delivery,
+    case
+      when order_delivered_customer_date > order_estimated_delivery_date then true
+      else false
+    end as is_late_delivery
+  from source
+)
+
+select * from cleaned
+    );
+  
+  
+[0m13:47:56.510198 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.stg_payments__payments"
+[0m13:47:56.512641 [debug] [Thread-4 (]: On model.olist_project.stg_payments__payments: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_payments__payments"} */
+
+  
+    
+    
+
+    create  table
+      "olist"."analytics_staging"."stg_payments__payments__dbt_tmp"
+  
+    as (
+      
+
+with source as (
+  select
+    order_id,
+    payment_sequential,
+    payment_type,
+    payment_installments,
+    payment_value
+  from main.raw_order_payments
+)
+
+select * from source
+    );
+  
+  
+[0m13:47:56.677072 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.697020 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.stg_payments__payments"
+[0m13:47:56.717458 [debug] [Thread-4 (]: On model.olist_project.stg_payments__payments: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_payments__payments"} */
+alter table "olist"."analytics_staging"."stg_payments__payments" rename to "stg_payments__payments__dbt_backup"
+[0m13:47:56.725436 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.734412 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.stg_payments__payments"
+[0m13:47:56.736407 [debug] [Thread-4 (]: On model.olist_project.stg_payments__payments: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_payments__payments"} */
+alter table "olist"."analytics_staging"."stg_payments__payments__dbt_tmp" rename to "stg_payments__payments"
+[0m13:47:56.738402 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.783286 [debug] [Thread-4 (]: On model.olist_project.stg_payments__payments: COMMIT
+[0m13:47:56.783286 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.785281 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.stg_payments__payments"
+[0m13:47:56.787275 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.788272 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.793403 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_order_items__order_items"
+[0m13:47:56.794404 [debug] [Thread-4 (]: On model.olist_project.stg_payments__payments: COMMIT
+[0m13:47:56.798390 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_customers__customers"
+[0m13:47:56.804374 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.stg_orders__orders"
+[0m13:47:56.805371 [debug] [Thread-2 (]: On model.olist_project.stg_order_items__order_items: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_order_items__order_items"} */
+alter table "olist"."analytics_staging"."stg_order_items__order_items" rename to "stg_order_items__order_items__dbt_backup"
+[0m13:47:56.807369 [debug] [Thread-1 (]: On model.olist_project.stg_customers__customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_customers__customers"} */
+alter table "olist"."analytics_staging"."stg_customers__customers" rename to "stg_customers__customers__dbt_backup"
+[0m13:47:56.808366 [debug] [Thread-3 (]: On model.olist_project.stg_orders__orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_orders__orders"} */
+alter table "olist"."analytics_staging"."stg_orders__orders" rename to "stg_orders__orders__dbt_backup"
+[0m13:47:56.810359 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.812570 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.813568 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.821546 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_order_items__order_items"
+[0m13:47:56.829527 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_customers__customers"
+[0m13:47:56.836505 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.stg_orders__orders"
+[0m13:47:56.837504 [debug] [Thread-2 (]: On model.olist_project.stg_order_items__order_items: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_order_items__order_items"} */
+alter table "olist"."analytics_staging"."stg_order_items__order_items__dbt_tmp" rename to "stg_order_items__order_items"
+[0m13:47:56.838500 [debug] [Thread-1 (]: On model.olist_project.stg_customers__customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_customers__customers"} */
+alter table "olist"."analytics_staging"."stg_customers__customers__dbt_tmp" rename to "stg_customers__customers"
+[0m13:47:56.840495 [debug] [Thread-3 (]: On model.olist_project.stg_orders__orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_orders__orders"} */
+alter table "olist"."analytics_staging"."stg_orders__orders__dbt_tmp" rename to "stg_orders__orders"
+[0m13:47:56.842503 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.843487 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.847476 [debug] [Thread-2 (]: On model.olist_project.stg_order_items__order_items: COMMIT
+[0m13:47:56.849471 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.855455 [debug] [Thread-1 (]: On model.olist_project.stg_customers__customers: COMMIT
+[0m13:47:56.856452 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_order_items__order_items"
+[0m13:47:56.860443 [debug] [Thread-3 (]: On model.olist_project.stg_orders__orders: COMMIT
+[0m13:47:56.861439 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.862554 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_customers__customers"
+[0m13:47:56.863552 [debug] [Thread-2 (]: On model.olist_project.stg_order_items__order_items: COMMIT
+[0m13:47:56.864551 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.stg_orders__orders"
+[0m13:47:56.875520 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.stg_payments__payments"
+[0m13:47:56.876518 [debug] [Thread-1 (]: On model.olist_project.stg_customers__customers: COMMIT
+[0m13:47:56.877515 [debug] [Thread-3 (]: On model.olist_project.stg_orders__orders: COMMIT
+[0m13:47:56.879511 [debug] [Thread-4 (]: On model.olist_project.stg_payments__payments: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_payments__payments"} */
+drop table if exists "olist"."analytics_staging"."stg_payments__payments__dbt_backup" cascade
+[0m13:47:56.981331 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:56.988313 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_order_items__order_items"
+[0m13:47:56.990319 [debug] [Thread-2 (]: On model.olist_project.stg_order_items__order_items: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_order_items__order_items"} */
+drop table if exists "olist"."analytics_staging"."stg_order_items__order_items__dbt_backup" cascade
+[0m13:47:57.064120 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:57.071103 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_customers__customers"
+[0m13:47:57.073097 [debug] [Thread-1 (]: On model.olist_project.stg_customers__customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_customers__customers"} */
+drop table if exists "olist"."analytics_staging"."stg_customers__customers__dbt_backup" cascade
+[0m13:47:57.140649 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:57.147631 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.stg_orders__orders"
+[0m13:47:57.148631 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:57.149626 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:57.150623 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:57.152620 [debug] [Thread-3 (]: On model.olist_project.stg_orders__orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_orders__orders"} */
+drop table if exists "olist"."analytics_staging"."stg_orders__orders__dbt_backup" cascade
+[0m13:47:57.155612 [debug] [Thread-1 (]: Timing info for model.olist_project.stg_customers__customers (execute): 13:47:56.370394 => 13:47:57.154613
+[0m13:47:57.160598 [debug] [Thread-2 (]: Timing info for model.olist_project.stg_order_items__order_items (execute): 13:47:56.435398 => 13:47:57.159601
+[0m13:47:57.163710 [debug] [Thread-4 (]: Timing info for model.olist_project.stg_payments__payments (execute): 13:47:56.454348 => 13:47:57.163710
+[0m13:47:57.166702 [debug] [Thread-1 (]: On model.olist_project.stg_customers__customers: Close
+[0m13:47:57.170693 [debug] [Thread-2 (]: On model.olist_project.stg_order_items__order_items: Close
+[0m13:47:57.172686 [debug] [Thread-4 (]: On model.olist_project.stg_payments__payments: Close
+[0m13:47:57.174681 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A77E48D0>]}
+[0m13:47:57.177673 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A7895690>]}
+[0m13:47:57.179668 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A7897910>]}
+[0m13:47:57.181661 [info ] [Thread-1 (]: 1 of 9 OK created sql table model analytics_staging.stg_customers__customers ... [[32mOK[0m in 0.87s]
+[0m13:47:57.184655 [info ] [Thread-2 (]: 2 of 9 OK created sql table model analytics_staging.stg_order_items__order_items  [[32mOK[0m in 0.87s]
+[0m13:47:57.188643 [debug] [Thread-1 (]: Finished running node model.olist_project.stg_customers__customers
+[0m13:47:57.191636 [debug] [Thread-2 (]: Finished running node model.olist_project.stg_order_items__order_items
+[0m13:47:57.186649 [info ] [Thread-4 (]: 4 of 9 OK created sql table model analytics_staging.stg_payments__payments ..... [[32mOK[0m in 0.87s]
+[0m13:47:57.193629 [debug] [Thread-1 (]: Began running node model.olist_project.stg_products__products
+[0m13:47:57.195626 [debug] [Thread-2 (]: Began running node model.olist_project.stg_sellers__sellers
+[0m13:47:57.197619 [debug] [Thread-4 (]: Finished running node model.olist_project.stg_payments__payments
+[0m13:47:57.198616 [info ] [Thread-1 (]: 5 of 9 START sql table model analytics_staging.stg_products__products .......... [RUN]
+[0m13:47:57.203604 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_customers__customers, now model.olist_project.stg_products__products)
+[0m13:47:57.200612 [info ] [Thread-2 (]: 6 of 9 START sql table model analytics_staging.stg_sellers__sellers ............ [RUN]
+[0m13:47:57.204601 [debug] [Thread-1 (]: Began compiling node model.olist_project.stg_products__products
+[0m13:47:57.207592 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_order_items__order_items, now model.olist_project.stg_sellers__sellers)
+[0m13:47:57.229533 [debug] [Thread-2 (]: Began compiling node model.olist_project.stg_sellers__sellers
+[0m13:47:57.240504 [debug] [Thread-2 (]: Writing injected SQL for node "model.olist_project.stg_sellers__sellers"
+[0m13:47:57.231528 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_project.stg_products__products"
+[0m13:47:57.253809 [debug] [Thread-1 (]: Timing info for model.olist_project.stg_products__products (compile): 13:47:57.208590 => 13:47:57.252605
+[0m13:47:57.255910 [debug] [Thread-1 (]: Began executing node model.olist_project.stg_products__products
+[0m13:47:57.411006 [debug] [Thread-2 (]: Timing info for model.olist_project.stg_sellers__sellers (compile): 13:47:57.232526 => 13:47:57.410010
+[0m13:47:57.422180 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_project.stg_products__products"
+[0m13:47:57.423179 [debug] [Thread-2 (]: Began executing node model.olist_project.stg_sellers__sellers
+[0m13:47:57.436144 [debug] [Thread-2 (]: Writing runtime sql for node "model.olist_project.stg_sellers__sellers"
+[0m13:47:57.438136 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_sellers__sellers"
+[0m13:47:57.440131 [debug] [Thread-2 (]: On model.olist_project.stg_sellers__sellers: BEGIN
+[0m13:47:57.442127 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:47:57.444121 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:57.445120 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_sellers__sellers"
+[0m13:47:57.447116 [debug] [Thread-2 (]: On model.olist_project.stg_sellers__sellers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_sellers__sellers"} */
+
+  
+    
+    
+
+    create  table
+      "olist"."analytics_staging"."stg_sellers__sellers__dbt_tmp"
+  
+    as (
+      
+
+with source as (
+  select
+    seller_id,
+    seller_zip_code_prefix,
+    seller_city,
+    seller_state
+  from main.raw_sellers
+)
+
+select * from source
+    );
+  
+  
+[0m13:47:57.477062 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_products__products"
+[0m13:47:57.479057 [debug] [Thread-1 (]: On model.olist_project.stg_products__products: BEGIN
+[0m13:47:57.481053 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:47:57.483048 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:57.485041 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_products__products"
+[0m13:47:57.486038 [debug] [Thread-1 (]: On model.olist_project.stg_products__products: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_products__products"} */
+
+  
+    
+    
+
+    create  table
+      "olist"."analytics_staging"."stg_products__products__dbt_tmp"
+  
+    as (
+      
+
+with products as (
+  select
+    product_id,
+    product_category_name,
+    product_name_lenght,
+    product_description_lenght,
+    product_photos_qty,
+    product_weight_g,
+    product_length_cm,
+    product_height_cm,
+    product_width_cm
+  from "olist"."main"."raw_products"
+)
+
+, category_translation as (
+  select
+    product_category_name,
+    product_category_name_english
+  from "olist"."main"."raw_product_category_translation"
+)
+
+, joined as (
+  select
+    p.product_id,
+    p.product_category_name,
+    ct.product_category_name_english,
+    p.product_name_lenght,
+    p.product_description_lenght,
+    p.product_photos_qty,
+    p.product_weight_g,
+    p.product_length_cm,
+    p.product_height_cm,
+    p.product_width_cm
+  from products p
+  left join category_translation ct
+    on p.product_category_name = ct.product_category_name
+)
+
+select * from joined
+    );
+  
+  
+[0m13:47:58.073032 [debug] [Thread-3 (]: SQL status: OK in 1.0 seconds
+[0m13:47:58.077023 [debug] [Thread-3 (]: Timing info for model.olist_project.stg_orders__orders (execute): 13:47:56.445373 => 13:47:58.076024
+[0m13:47:58.078018 [debug] [Thread-3 (]: On model.olist_project.stg_orders__orders: Close
+[0m13:47:58.079017 [debug] [Thread-2 (]: SQL status: OK in 1.0 seconds
+[0m13:47:58.081012 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A7ABEE10>]}
+[0m13:47:58.089306 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_sellers__sellers"
+[0m13:47:58.092474 [debug] [Thread-2 (]: On model.olist_project.stg_sellers__sellers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_sellers__sellers"} */
+alter table "olist"."analytics_staging"."stg_sellers__sellers" rename to "stg_sellers__sellers__dbt_backup"
+[0m13:47:58.090301 [info ] [Thread-3 (]: 3 of 9 OK created sql table model analytics_staging.stg_orders__orders ......... [[32mOK[0m in 1.77s]
+[0m13:47:58.094469 [debug] [Thread-3 (]: Finished running node model.olist_project.stg_orders__orders
+[0m13:47:58.095468 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.102447 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_sellers__sellers"
+[0m13:47:58.104442 [debug] [Thread-4 (]: Began running node model.olist_project.fct_orders
+[0m13:47:58.106438 [debug] [Thread-2 (]: On model.olist_project.stg_sellers__sellers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_sellers__sellers"} */
+alter table "olist"."analytics_staging"."stg_sellers__sellers__dbt_tmp" rename to "stg_sellers__sellers"
+[0m13:47:58.112544 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.108431 [info ] [Thread-4 (]: 7 of 9 START sql table model analytics_marts.fct_orders ........................ [RUN]
+[0m13:47:58.116958 [debug] [Thread-2 (]: On model.olist_project.stg_sellers__sellers: COMMIT
+[0m13:47:58.118955 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_payments__payments, now model.olist_project.fct_orders)
+[0m13:47:58.120949 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_sellers__sellers"
+[0m13:47:58.122945 [debug] [Thread-4 (]: Began compiling node model.olist_project.fct_orders
+[0m13:47:58.123943 [debug] [Thread-2 (]: On model.olist_project.stg_sellers__sellers: COMMIT
+[0m13:47:58.133914 [debug] [Thread-4 (]: Writing injected SQL for node "model.olist_project.fct_orders"
+[0m13:47:58.140896 [debug] [Thread-4 (]: Timing info for model.olist_project.fct_orders (compile): 13:47:58.124940 => 13:47:58.139899
+[0m13:47:58.142890 [debug] [Thread-4 (]: Began executing node model.olist_project.fct_orders
+[0m13:47:58.153861 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.156853 [debug] [Thread-4 (]: Writing runtime sql for node "model.olist_project.fct_orders"
+[0m13:47:58.158849 [debug] [Thread-1 (]: SQL status: OK in 1.0 seconds
+[0m13:47:58.162872 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.stg_sellers__sellers"
+[0m13:47:58.168948 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_products__products"
+[0m13:47:58.170946 [debug] [Thread-2 (]: On model.olist_project.stg_sellers__sellers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_sellers__sellers"} */
+drop table if exists "olist"."analytics_staging"."stg_sellers__sellers__dbt_backup" cascade
+[0m13:47:58.172939 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:47:58.173937 [debug] [Thread-1 (]: On model.olist_project.stg_products__products: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_products__products"} */
+alter table "olist"."analytics_staging"."stg_products__products" rename to "stg_products__products__dbt_backup"
+[0m13:47:58.175936 [debug] [Thread-4 (]: On model.olist_project.fct_orders: BEGIN
+[0m13:47:58.176929 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:47:58.177925 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.178922 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.179919 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.185904 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_products__products"
+[0m13:47:58.190017 [debug] [Thread-2 (]: Timing info for model.olist_project.stg_sellers__sellers (execute): 13:47:57.425172 => 13:47:58.189022
+[0m13:47:58.191017 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:47:58.192234 [debug] [Thread-1 (]: On model.olist_project.stg_products__products: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_products__products"} */
+alter table "olist"."analytics_staging"."stg_products__products__dbt_tmp" rename to "stg_products__products"
+[0m13:47:58.193233 [debug] [Thread-2 (]: On model.olist_project.stg_sellers__sellers: Close
+[0m13:47:58.194231 [debug] [Thread-4 (]: On model.olist_project.fct_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.fct_orders"} */
+
+  
+    
+    
+
+    create  table
+      "olist"."analytics_marts"."fct_orders__dbt_tmp"
+  
+    as (
+      
+
+SELECT
+  o.order_id,
+  o.customer_id,
+  o.order_status,
+  o.order_purchase_at,
+  o.order_approved_at,
+  o.order_delivered_customer_at,
+  o.order_estimated_delivery_at,
+  o.days_to_delivery,
+  o.is_late_delivery,
+  COUNT(DISTINCT oi.order_item_id) as num_items,
+  SUM(oi.item_total_value) as order_total_value,
+  COUNT(DISTINCT p.payment_sequential) as num_payments
+FROM "olist"."analytics_staging"."stg_orders__orders" o
+LEFT JOIN "olist"."analytics_staging"."stg_order_items__order_items" oi ON o.order_id = oi.order_id
+LEFT JOIN "olist"."analytics_staging"."stg_payments__payments" p ON o.order_id = p.order_id
+GROUP BY o.order_id, o.customer_id, o.order_status, o.order_purchase_at, o.order_approved_at, 
+         o.order_delivered_customer_at, o.order_estimated_delivery_at, o.days_to_delivery, o.is_late_delivery
+    );
+  
+  
+[0m13:47:58.196238 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A64D8950>]}
+[0m13:47:58.197222 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.206886 [debug] [Thread-1 (]: On model.olist_project.stg_products__products: COMMIT
+[0m13:47:58.200903 [info ] [Thread-2 (]: 6 of 9 OK created sql table model analytics_staging.stg_sellers__sellers ....... [[32mOK[0m in 0.99s]
+[0m13:47:58.208882 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_products__products"
+[0m13:47:58.209879 [debug] [Thread-2 (]: Finished running node model.olist_project.stg_sellers__sellers
+[0m13:47:58.210876 [debug] [Thread-1 (]: On model.olist_project.stg_products__products: COMMIT
+[0m13:47:58.225976 [debug] [Thread-3 (]: Began running node model.olist_project.dim_sellers
+[0m13:47:58.227972 [info ] [Thread-3 (]: 8 of 9 START sql table model analytics_marts.dim_sellers ....................... [RUN]
+[0m13:47:58.238065 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_orders__orders, now model.olist_project.dim_sellers)
+[0m13:47:58.240058 [debug] [Thread-3 (]: Began compiling node model.olist_project.dim_sellers
+[0m13:47:58.249048 [debug] [Thread-3 (]: Writing injected SQL for node "model.olist_project.dim_sellers"
+[0m13:47:58.251029 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.255017 [debug] [Thread-3 (]: Timing info for model.olist_project.dim_sellers (compile): 13:47:58.241080 => 13:47:58.253024
+[0m13:47:58.263995 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.stg_products__products"
+[0m13:47:58.265991 [debug] [Thread-3 (]: Began executing node model.olist_project.dim_sellers
+[0m13:47:58.267982 [debug] [Thread-1 (]: On model.olist_project.stg_products__products: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.stg_products__products"} */
+drop table if exists "olist"."analytics_staging"."stg_products__products__dbt_backup" cascade
+[0m13:47:58.289072 [debug] [Thread-3 (]: Writing runtime sql for node "model.olist_project.dim_sellers"
+[0m13:47:58.294999 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.299986 [debug] [Thread-1 (]: Timing info for model.olist_project.stg_products__products (execute): 13:47:57.256904 => 13:47:58.299986
+[0m13:47:58.301981 [debug] [Thread-1 (]: On model.olist_project.stg_products__products: Close
+[0m13:47:58.302979 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.dim_sellers"
+[0m13:47:58.305970 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A781E350>]}
+[0m13:47:58.307976 [debug] [Thread-3 (]: On model.olist_project.dim_sellers: BEGIN
+[0m13:47:58.310956 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:47:58.308960 [info ] [Thread-1 (]: 5 of 9 OK created sql table model analytics_staging.stg_products__products ..... [[32mOK[0m in 1.10s]
+[0m13:47:58.313116 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.315110 [debug] [Thread-1 (]: Finished running node model.olist_project.stg_products__products
+[0m13:47:58.317237 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.dim_sellers"
+[0m13:47:58.319109 [debug] [Thread-3 (]: On model.olist_project.dim_sellers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.dim_sellers"} */
+
+  
+    
+    
+
+    create  table
+      "olist"."analytics_marts"."dim_sellers__dbt_tmp"
+  
+    as (
+      
+
+SELECT
+  s.seller_id,
+  s.seller_city,
+  s.seller_state,
+  COUNT(DISTINCT oi.order_id) as orders_sold,
+  SUM(oi.item_total_value) as total_revenue,
+  AVG(oi.item_total_value) as avg_item_price
+FROM "olist"."analytics_staging"."stg_sellers__sellers" s
+LEFT JOIN "olist"."analytics_staging"."stg_order_items__order_items" oi ON s.seller_id = oi.seller_id
+GROUP BY s.seller_id, s.seller_city, s.seller_state
+    );
+  
+  
+[0m13:47:58.455235 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.463347 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.dim_sellers"
+[0m13:47:58.465341 [debug] [Thread-3 (]: On model.olist_project.dim_sellers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.dim_sellers"} */
+alter table "olist"."analytics_marts"."dim_sellers" rename to "dim_sellers__dbt_backup"
+[0m13:47:58.466340 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.475315 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.dim_sellers"
+[0m13:47:58.476311 [debug] [Thread-3 (]: On model.olist_project.dim_sellers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.dim_sellers"} */
+alter table "olist"."analytics_marts"."dim_sellers__dbt_tmp" rename to "dim_sellers"
+[0m13:47:58.477308 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.483291 [debug] [Thread-3 (]: On model.olist_project.dim_sellers: COMMIT
+[0m13:47:58.484290 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.dim_sellers"
+[0m13:47:58.486284 [debug] [Thread-3 (]: On model.olist_project.dim_sellers: COMMIT
+[0m13:47:58.494262 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.500247 [debug] [Thread-3 (]: Using duckdb connection "model.olist_project.dim_sellers"
+[0m13:47:58.502240 [debug] [Thread-3 (]: On model.olist_project.dim_sellers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.dim_sellers"} */
+drop table if exists "olist"."analytics_marts"."dim_sellers__dbt_backup" cascade
+[0m13:47:58.507228 [debug] [Thread-3 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.511218 [debug] [Thread-3 (]: Timing info for model.olist_project.dim_sellers (execute): 13:47:58.271974 => 13:47:58.511218
+[0m13:47:58.512332 [debug] [Thread-3 (]: On model.olist_project.dim_sellers: Close
+[0m13:47:58.514329 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A6428F90>]}
+[0m13:47:58.515328 [info ] [Thread-3 (]: 8 of 9 OK created sql table model analytics_marts.dim_sellers .................. [[32mOK[0m in 0.28s]
+[0m13:47:58.518318 [debug] [Thread-3 (]: Finished running node model.olist_project.dim_sellers
+[0m13:47:58.752701 [debug] [Thread-4 (]: SQL status: OK in 1.0 seconds
+[0m13:47:58.758686 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:47:58.759683 [debug] [Thread-4 (]: On model.olist_project.fct_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.fct_orders"} */
+alter table "olist"."analytics_marts"."fct_orders" rename to "fct_orders__dbt_backup"
+[0m13:47:58.760681 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.765777 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:47:58.766911 [debug] [Thread-4 (]: On model.olist_project.fct_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.fct_orders"} */
+alter table "olist"."analytics_marts"."fct_orders__dbt_tmp" rename to "fct_orders"
+[0m13:47:58.767910 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.772896 [debug] [Thread-4 (]: On model.olist_project.fct_orders: COMMIT
+[0m13:47:58.773893 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:47:58.774890 [debug] [Thread-4 (]: On model.olist_project.fct_orders: COMMIT
+[0m13:47:58.865684 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:58.873311 [debug] [Thread-4 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:47:58.874310 [debug] [Thread-4 (]: On model.olist_project.fct_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.fct_orders"} */
+drop table if exists "olist"."analytics_marts"."fct_orders__dbt_backup" cascade
+[0m13:47:59.157319 [debug] [Thread-4 (]: SQL status: OK in 0.0 seconds
+[0m13:47:59.160312 [debug] [Thread-4 (]: Timing info for model.olist_project.fct_orders (execute): 13:47:58.143905 => 13:47:59.160312
+[0m13:47:59.162304 [debug] [Thread-4 (]: On model.olist_project.fct_orders: Close
+[0m13:47:59.175427 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A7995E90>]}
+[0m13:47:59.176424 [info ] [Thread-4 (]: 7 of 9 OK created sql table model analytics_marts.fct_orders ................... [[32mOK[0m in 1.06s]
+[0m13:47:59.178421 [debug] [Thread-4 (]: Finished running node model.olist_project.fct_orders
+[0m13:47:59.180413 [debug] [Thread-2 (]: Began running node model.olist_project.dim_customers
+[0m13:47:59.181410 [info ] [Thread-2 (]: 9 of 9 START sql table model analytics_marts.dim_customers ..................... [RUN]
+[0m13:47:59.184406 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_sellers__sellers, now model.olist_project.dim_customers)
+[0m13:47:59.185406 [debug] [Thread-2 (]: Began compiling node model.olist_project.dim_customers
+[0m13:47:59.193380 [debug] [Thread-2 (]: Writing injected SQL for node "model.olist_project.dim_customers"
+[0m13:47:59.195377 [debug] [Thread-2 (]: Timing info for model.olist_project.dim_customers (compile): 13:47:59.186399 => 13:47:59.194387
+[0m13:47:59.196373 [debug] [Thread-2 (]: Began executing node model.olist_project.dim_customers
+[0m13:47:59.204896 [debug] [Thread-2 (]: Writing runtime sql for node "model.olist_project.dim_customers"
+[0m13:47:59.207885 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.dim_customers"
+[0m13:47:59.209883 [debug] [Thread-2 (]: On model.olist_project.dim_customers: BEGIN
+[0m13:47:59.210877 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:47:59.297165 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:59.298161 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.dim_customers"
+[0m13:47:59.299160 [debug] [Thread-2 (]: On model.olist_project.dim_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.dim_customers"} */
+
+  
+    
+    
+
+    create  table
+      "olist"."analytics_marts"."dim_customers__dbt_tmp"
+  
+    as (
+      
+
+SELECT
+  c.customer_id,
+  c.customer_city,
+  c.customer_state,
+  COUNT(DISTINCT o.order_id) as lifetime_orders,
+  SUM(o.order_total_value) as lifetime_value,
+  AVG(o.days_to_delivery) as avg_delivery_days
+FROM "olist"."analytics_staging"."stg_customers__customers" c
+LEFT JOIN "olist"."analytics_marts"."fct_orders" o ON c.customer_id = o.customer_id
+GROUP BY c.customer_id, c.customer_city, c.customer_state
+    );
+  
+  
+[0m13:47:59.538212 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:59.544312 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.dim_customers"
+[0m13:47:59.545311 [debug] [Thread-2 (]: On model.olist_project.dim_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.dim_customers"} */
+alter table "olist"."analytics_marts"."dim_customers" rename to "dim_customers__dbt_backup"
+[0m13:47:59.547305 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:59.553288 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.dim_customers"
+[0m13:47:59.554287 [debug] [Thread-2 (]: On model.olist_project.dim_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.dim_customers"} */
+alter table "olist"."analytics_marts"."dim_customers__dbt_tmp" rename to "dim_customers"
+[0m13:47:59.556281 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:59.561267 [debug] [Thread-2 (]: On model.olist_project.dim_customers: COMMIT
+[0m13:47:59.562372 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.dim_customers"
+[0m13:47:59.563372 [debug] [Thread-2 (]: On model.olist_project.dim_customers: COMMIT
+[0m13:47:59.633531 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:59.640549 [debug] [Thread-2 (]: Using duckdb connection "model.olist_project.dim_customers"
+[0m13:47:59.641545 [debug] [Thread-2 (]: On model.olist_project.dim_customers: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.dim_customers"} */
+drop table if exists "olist"."analytics_marts"."dim_customers__dbt_backup" cascade
+[0m13:47:59.644678 [debug] [Thread-2 (]: SQL status: OK in 0.0 seconds
+[0m13:47:59.647671 [debug] [Thread-2 (]: Timing info for model.olist_project.dim_customers (execute): 13:47:59.197369 => 13:47:59.647671
+[0m13:47:59.650662 [debug] [Thread-2 (]: On model.olist_project.dim_customers: Close
+[0m13:47:59.802502 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ee28b8b7-99d0-49cf-a871-f4a16df9611c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A797B190>]}
+[0m13:47:59.803500 [info ] [Thread-2 (]: 9 of 9 OK created sql table model analytics_marts.dim_customers ................ [[32mOK[0m in 0.62s]
+[0m13:47:59.805827 [debug] [Thread-2 (]: Finished running node model.olist_project.dim_customers
+[0m13:47:59.809815 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:47:59.810812 [debug] [MainThread]: On master: BEGIN
+[0m13:47:59.811846 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:47:59.841032 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m13:47:59.844081 [debug] [MainThread]: On master: COMMIT
+[0m13:47:59.846380 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:47:59.847376 [debug] [MainThread]: On master: COMMIT
+[0m13:47:59.849370 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m13:47:59.850367 [debug] [MainThread]: On master: Close
+[0m13:47:59.857349 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:47:59.857349 [debug] [MainThread]: Connection 'create_olist_analytics_marts' was properly closed.
+[0m13:47:59.860339 [debug] [MainThread]: Connection 'create_olist_analytics_staging' was properly closed.
+[0m13:47:59.862336 [debug] [MainThread]: Connection 'list_olist_analytics_staging' was properly closed.
+[0m13:47:59.863331 [debug] [MainThread]: Connection 'list_olist_analytics_marts' was properly closed.
+[0m13:47:59.864365 [debug] [MainThread]: Connection 'list_olist_analytics' was properly closed.
+[0m13:47:59.865333 [debug] [MainThread]: Connection 'model.olist_project.stg_products__products' was properly closed.
+[0m13:47:59.866325 [debug] [MainThread]: Connection 'model.olist_project.dim_customers' was properly closed.
+[0m13:47:59.868320 [debug] [MainThread]: Connection 'model.olist_project.dim_sellers' was properly closed.
+[0m13:47:59.869318 [debug] [MainThread]: Connection 'model.olist_project.fct_orders' was properly closed.
+[0m13:47:59.877293 [info ] [MainThread]: 
+[0m13:47:59.879289 [info ] [MainThread]: Finished running 9 table models in 0 hours 0 minutes and 3.97 seconds (3.97s).
+[0m13:47:59.886269 [debug] [MainThread]: Command end result
+[0m13:47:59.917162 [info ] [MainThread]: 
+[0m13:47:59.919156 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:47:59.920153 [info ] [MainThread]: 
+[0m13:47:59.921854 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 TOTAL=9
+[0m13:47:59.925073 [debug] [MainThread]: Command `dbt run` succeeded at 13:47:59.924071 after 4.92 seconds
+[0m13:47:59.926071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A5963010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A5F4A750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223A5CE2450>]}
+[0m13:47:59.930059 [debug] [MainThread]: Flushing usage events
+[0m13:49:56.261099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40E5C7D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40E5C75D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40E5C4A10>]}
+
+
+============================== 13:49:56.270202 | 638bf2a9-365d-48b4-8a75-463f946e4366 ==============================
+[0m13:49:56.270202 [info ] [MainThread]: Running with dbt=1.7.9
+[0m13:49:56.272196 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'True', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Evans Moseti\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select fct_orders --debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\kev\\Olist Ecommerce\\olist\\logs'}
+[0m13:49:56.504458 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m13:49:56.506419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '638bf2a9-365d-48b4-8a75-463f946e4366', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40E602890>]}
+[0m13:49:56.678234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '638bf2a9-365d-48b4-8a75-463f946e4366', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40E64DC10>]}
+[0m13:49:56.821577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '638bf2a9-365d-48b4-8a75-463f946e4366', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40E70AD10>]}
+[0m13:49:56.824534 [info ] [MainThread]: Registered adapter: duckdb=1.7.5
+[0m13:49:56.838534 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m13:49:56.960040 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:49:56.962034 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:49:56.976595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '638bf2a9-365d-48b4-8a75-463f946e4366', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40F8569D0>]}
+[0m13:49:57.004625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '638bf2a9-365d-48b4-8a75-463f946e4366', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40E717590>]}
+[0m13:49:57.008613 [info ] [MainThread]: Found 9 seeds, 9 models, 11 tests, 9 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m13:49:57.010607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '638bf2a9-365d-48b4-8a75-463f946e4366', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40F7DC250>]}
+[0m13:49:57.015720 [info ] [MainThread]: 
+[0m13:49:57.018712 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:49:57.022703 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist'
+[0m13:49:57.056769 [debug] [ThreadPool]: Using duckdb connection "list_olist"
+[0m13:49:57.059766 [debug] [ThreadPool]: On list_olist: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"olist"'
+    
+  
+  
+[0m13:49:57.062788 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:49:57.086182 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.094567 [debug] [ThreadPool]: On list_olist: Close
+[0m13:49:57.101549 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_olist, now create_olist_analytics_marts)
+[0m13:49:57.103542 [debug] [ThreadPool]: Creating schema "database: "olist"
+schema: "analytics_marts"
+"
+[0m13:49:57.117539 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_marts"
+[0m13:49:57.119500 [debug] [ThreadPool]: On create_olist_analytics_marts: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "create_olist_analytics_marts"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='olist'
+        and type='sqlite'
+    
+  
+[0m13:49:57.125492 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:49:57.142685 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.146673 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_marts"
+[0m13:49:57.147670 [debug] [ThreadPool]: On create_olist_analytics_marts: BEGIN
+[0m13:49:57.150661 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.151659 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_marts"
+[0m13:49:57.153654 [debug] [ThreadPool]: On create_olist_analytics_marts: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "create_olist_analytics_marts"} */
+
+    
+    
+        create schema if not exists "olist"."analytics_marts"
+    
+[0m13:49:57.158641 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.161633 [debug] [ThreadPool]: On create_olist_analytics_marts: COMMIT
+[0m13:49:57.162754 [debug] [ThreadPool]: Using duckdb connection "create_olist_analytics_marts"
+[0m13:49:57.164750 [debug] [ThreadPool]: On create_olist_analytics_marts: COMMIT
+[0m13:49:57.166769 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.168807 [debug] [ThreadPool]: On create_olist_analytics_marts: Close
+[0m13:49:57.179005 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist_analytics_staging'
+[0m13:49:57.180995 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist_analytics'
+[0m13:49:57.182991 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist_analytics_marts'
+[0m13:49:57.197998 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_staging"
+[0m13:49:57.211205 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_marts"
+[0m13:49:57.211205 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics"
+[0m13:49:57.213351 [debug] [ThreadPool]: On list_olist_analytics_staging: BEGIN
+[0m13:49:57.214349 [debug] [ThreadPool]: On list_olist_analytics_marts: BEGIN
+[0m13:49:57.215347 [debug] [ThreadPool]: On list_olist_analytics: BEGIN
+[0m13:49:57.217439 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:49:57.218434 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:49:57.219433 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:49:57.241162 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.242289 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.244281 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.246277 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_staging"
+[0m13:49:57.247273 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_marts"
+[0m13:49:57.249267 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics"
+[0m13:49:57.250266 [debug] [ThreadPool]: On list_olist_analytics_staging: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist_analytics_staging"} */
+select
+      'olist' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'analytics_staging'
+    and table_catalog = 'olist'
+  
+[0m13:49:57.252261 [debug] [ThreadPool]: On list_olist_analytics_marts: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist_analytics_marts"} */
+select
+      'olist' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'analytics_marts'
+    and table_catalog = 'olist'
+  
+[0m13:49:57.253257 [debug] [ThreadPool]: On list_olist_analytics: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist_analytics"} */
+select
+      'olist' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'analytics'
+    and table_catalog = 'olist'
+  
+[0m13:49:57.354779 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.356775 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.373731 [debug] [ThreadPool]: On list_olist_analytics_marts: ROLLBACK
+[0m13:49:57.374728 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:49:57.382706 [debug] [ThreadPool]: On list_olist_analytics: ROLLBACK
+[0m13:49:57.377719 [debug] [ThreadPool]: Failed to rollback 'list_olist_analytics_marts'
+[0m13:49:57.385698 [debug] [ThreadPool]: Failed to rollback 'list_olist_analytics'
+[0m13:49:57.391682 [debug] [ThreadPool]: On list_olist_analytics_staging: ROLLBACK
+[0m13:49:57.393676 [debug] [ThreadPool]: On list_olist_analytics_marts: Close
+[0m13:49:57.394674 [debug] [ThreadPool]: On list_olist_analytics: Close
+[0m13:49:57.397672 [debug] [ThreadPool]: Failed to rollback 'list_olist_analytics_staging'
+[0m13:49:57.405644 [debug] [ThreadPool]: On list_olist_analytics_staging: Close
+[0m13:49:57.417932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '638bf2a9-365d-48b4-8a75-463f946e4366', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40F762150>]}
+[0m13:49:57.419928 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:49:57.422921 [debug] [MainThread]: On master: BEGIN
+[0m13:49:57.424913 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:49:57.446430 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m13:49:57.449424 [debug] [MainThread]: On master: COMMIT
+[0m13:49:57.452414 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:49:57.455406 [debug] [MainThread]: On master: COMMIT
+[0m13:49:57.460395 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m13:49:57.461390 [debug] [MainThread]: On master: Close
+[0m13:49:57.466378 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:49:57.468372 [info ] [MainThread]: 
+[0m13:49:57.475780 [debug] [Thread-1 (]: Began running node model.olist_project.fct_orders
+[0m13:49:57.477776 [info ] [Thread-1 (]: 1 of 1 START sql table model analytics_marts.fct_orders ........................ [RUN]
+[0m13:49:57.480766 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.olist_project.fct_orders'
+[0m13:49:57.482761 [debug] [Thread-1 (]: Began compiling node model.olist_project.fct_orders
+[0m13:49:57.502013 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_project.fct_orders"
+[0m13:49:57.505007 [debug] [Thread-1 (]: Timing info for model.olist_project.fct_orders (compile): 13:49:57.483758 => 13:49:57.504011
+[0m13:49:57.508996 [debug] [Thread-1 (]: Began executing node model.olist_project.fct_orders
+[0m13:49:57.582074 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_project.fct_orders"
+[0m13:49:57.584069 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:49:57.586064 [debug] [Thread-1 (]: On model.olist_project.fct_orders: BEGIN
+[0m13:49:57.587165 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:49:57.608008 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:49:57.610002 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:49:57.611994 [debug] [Thread-1 (]: On model.olist_project.fct_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.fct_orders"} */
+
+  
+    
+    
+
+    create  table
+      "olist"."analytics_marts"."fct_orders__dbt_tmp"
+  
+    as (
+      
+
+SELECT
+  o.order_id,
+  o.customer_id,
+  o.order_status,
+  o.order_purchase_at,
+  o.order_approved_at,
+  o.order_delivered_customer_at,
+  o.order_estimated_delivery_at,
+  o.days_to_delivery,
+  o.is_late_delivery,
+  COUNT(DISTINCT oi.order_item_id) as num_items,
+  SUM(oi.item_total_value) as order_total_value,
+  COUNT(DISTINCT p.payment_sequential) as num_payments
+FROM "olist"."analytics_staging"."stg_orders__orders" o
+LEFT JOIN "olist"."analytics_staging"."stg_order_items__order_items" oi ON o.order_id = oi.order_id
+LEFT JOIN "olist"."analytics_staging"."stg_payments__payments" p ON o.order_id = p.order_id
+GROUP BY o.order_id, o.customer_id, o.order_status, o.order_purchase_at, o.order_approved_at, 
+         o.order_delivered_customer_at, o.order_estimated_delivery_at, o.days_to_delivery, o.is_late_delivery
+    );
+  
+  
+[0m13:49:58.075723 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:49:58.084699 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:49:58.086699 [debug] [Thread-1 (]: On model.olist_project.fct_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.fct_orders"} */
+alter table "olist"."analytics_marts"."fct_orders" rename to "fct_orders__dbt_backup"
+[0m13:49:58.089330 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:49:58.098095 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:49:58.098095 [debug] [Thread-1 (]: On model.olist_project.fct_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.fct_orders"} */
+alter table "olist"."analytics_marts"."fct_orders__dbt_tmp" rename to "fct_orders"
+[0m13:49:58.098095 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:49:58.146388 [debug] [Thread-1 (]: On model.olist_project.fct_orders: COMMIT
+[0m13:49:58.147384 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:49:58.148382 [debug] [Thread-1 (]: On model.olist_project.fct_orders: COMMIT
+[0m13:49:58.247239 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:49:58.273864 [debug] [Thread-1 (]: Using duckdb connection "model.olist_project.fct_orders"
+[0m13:49:58.278854 [debug] [Thread-1 (]: On model.olist_project.fct_orders: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "node_id": "model.olist_project.fct_orders"} */
+drop table if exists "olist"."analytics_marts"."fct_orders__dbt_backup" cascade
+[0m13:49:58.283840 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m13:49:58.288009 [debug] [Thread-1 (]: Timing info for model.olist_project.fct_orders (execute): 13:49:57.510990 => 13:49:58.286833
+[0m13:49:58.290989 [debug] [Thread-1 (]: On model.olist_project.fct_orders: Close
+[0m13:49:58.508883 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '638bf2a9-365d-48b4-8a75-463f946e4366', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40F7B4890>]}
+[0m13:49:58.510878 [info ] [Thread-1 (]: 1 of 1 OK created sql table model analytics_marts.fct_orders ................... [[32mOK[0m in 1.03s]
+[0m13:49:58.513072 [debug] [Thread-1 (]: Finished running node model.olist_project.fct_orders
+[0m13:49:58.515988 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:49:58.517983 [debug] [MainThread]: On master: BEGIN
+[0m13:49:58.519978 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:49:58.556080 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m13:49:58.556909 [debug] [MainThread]: On master: COMMIT
+[0m13:49:58.559905 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:49:58.564163 [debug] [MainThread]: On master: COMMIT
+[0m13:49:58.568357 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m13:49:58.570350 [debug] [MainThread]: On master: Close
+[0m13:49:58.578330 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:49:58.580326 [debug] [MainThread]: Connection 'create_olist_analytics_marts' was properly closed.
+[0m13:49:58.581326 [debug] [MainThread]: Connection 'list_olist_analytics_staging' was properly closed.
+[0m13:49:58.583316 [debug] [MainThread]: Connection 'list_olist_analytics' was properly closed.
+[0m13:49:58.584357 [debug] [MainThread]: Connection 'list_olist_analytics_marts' was properly closed.
+[0m13:49:58.586358 [debug] [MainThread]: Connection 'model.olist_project.fct_orders' was properly closed.
+[0m13:49:58.588351 [info ] [MainThread]: 
+[0m13:49:58.589346 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.57 seconds (1.57s).
+[0m13:49:58.591538 [debug] [MainThread]: Command end result
+[0m13:49:58.615618 [info ] [MainThread]: 
+[0m13:49:58.616615 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:49:58.618610 [info ] [MainThread]: 
+[0m13:49:58.619606 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m13:49:58.622599 [debug] [MainThread]: Command `dbt run` succeeded at 13:49:58.621601 after 2.45 seconds
+[0m13:49:58.624594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40E5C2890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B40E380950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B407AE78D0>]}
+[0m13:49:58.627586 [debug] [MainThread]: Flushing usage events
+[0m13:52:06.208061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D3ECAA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D3F13B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D3F10ED0>]}
+
+
+============================== 13:52:06.214190 | a0f0eb35-e4b5-44ff-8c72-254335915bcd ==============================
+[0m13:52:06.214190 [info ] [MainThread]: Running with dbt=1.7.9
+[0m13:52:06.216149 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Evans Moseti\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\kev\\Olist Ecommerce\\olist\\logs'}
+[0m13:52:06.425883 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m13:52:06.427843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a0f0eb35-e4b5-44ff-8c72-254335915bcd', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D4058990>]}
+[0m13:52:06.589401 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a0f0eb35-e4b5-44ff-8c72-254335915bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D406DC10>]}
+[0m13:52:06.731727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a0f0eb35-e4b5-44ff-8c72-254335915bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D3F6FC90>]}
+[0m13:52:06.733842 [info ] [MainThread]: Registered adapter: duckdb=1.7.5
+[0m13:52:06.747018 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m13:52:06.864143 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:52:06.865143 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:52:06.878106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a0f0eb35-e4b5-44ff-8c72-254335915bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D3F48D10>]}
+[0m13:52:06.885053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a0f0eb35-e4b5-44ff-8c72-254335915bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D52BB750>]}
+[0m13:52:06.887156 [info ] [MainThread]: Found 9 seeds, 9 models, 11 tests, 9 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m13:52:06.888044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a0f0eb35-e4b5-44ff-8c72-254335915bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D4002250>]}
+[0m13:52:06.892109 [info ] [MainThread]: 
+[0m13:52:06.892109 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:52:06.901000 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist_analytics'
+[0m13:52:06.903033 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist_analytics_marts'
+[0m13:52:06.923153 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics"
+[0m13:52:06.924125 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_olist_analytics_staging'
+[0m13:52:06.930098 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_marts"
+[0m13:52:06.932093 [debug] [ThreadPool]: On list_olist_analytics: BEGIN
+[0m13:52:06.938075 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_staging"
+[0m13:52:06.939075 [debug] [ThreadPool]: On list_olist_analytics_marts: BEGIN
+[0m13:52:06.940071 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:52:06.941068 [debug] [ThreadPool]: On list_olist_analytics_staging: BEGIN
+[0m13:52:06.942208 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:52:06.944204 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:52:06.962158 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:52:06.963153 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:52:06.964152 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:52:06.964152 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics"
+[0m13:52:06.965184 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_marts"
+[0m13:52:06.966146 [debug] [ThreadPool]: Using duckdb connection "list_olist_analytics_staging"
+[0m13:52:06.967141 [debug] [ThreadPool]: On list_olist_analytics: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist_analytics"} */
+select
+      'olist' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'analytics'
+    and table_catalog = 'olist'
+  
+[0m13:52:06.968140 [debug] [ThreadPool]: On list_olist_analytics_marts: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist_analytics_marts"} */
+select
+      'olist' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'analytics_marts'
+    and table_catalog = 'olist'
+  
+[0m13:52:06.970135 [debug] [ThreadPool]: On list_olist_analytics_staging: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "list_olist_analytics_staging"} */
+select
+      'olist' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'analytics_staging'
+    and table_catalog = 'olist'
+  
+[0m13:52:07.044935 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:52:07.048924 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:52:07.058897 [debug] [ThreadPool]: On list_olist_analytics_marts: ROLLBACK
+[0m13:52:07.059894 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:52:07.062008 [debug] [ThreadPool]: On list_olist_analytics_staging: ROLLBACK
+[0m13:52:07.064004 [debug] [ThreadPool]: On list_olist_analytics: ROLLBACK
+[0m13:52:07.065001 [debug] [ThreadPool]: Failed to rollback 'list_olist_analytics_marts'
+[0m13:52:07.065999 [debug] [ThreadPool]: Failed to rollback 'list_olist_analytics_staging'
+[0m13:52:07.067993 [debug] [ThreadPool]: Failed to rollback 'list_olist_analytics'
+[0m13:52:07.067993 [debug] [ThreadPool]: On list_olist_analytics_marts: Close
+[0m13:52:07.068992 [debug] [ThreadPool]: On list_olist_analytics_staging: Close
+[0m13:52:07.069988 [debug] [ThreadPool]: On list_olist_analytics: Close
+[0m13:52:07.082952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a0f0eb35-e4b5-44ff-8c72-254335915bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D51BC050>]}
+[0m13:52:07.083950 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:52:07.085945 [info ] [MainThread]: 
+[0m13:52:07.090931 [debug] [Thread-1 (]: Began running node model.olist_project.stg_customers__customers
+[0m13:52:07.091932 [debug] [Thread-2 (]: Began running node model.olist_project.stg_order_items__order_items
+[0m13:52:07.093924 [debug] [Thread-3 (]: Began running node model.olist_project.stg_orders__orders
+[0m13:52:07.094922 [debug] [Thread-4 (]: Began running node model.olist_project.stg_payments__payments
+[0m13:52:07.096922 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.olist_project.stg_customers__customers'
+[0m13:52:07.098911 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.olist_project.stg_order_items__order_items'
+[0m13:52:07.099906 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.olist_project.stg_orders__orders'
+[0m13:52:07.101902 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.olist_project.stg_payments__payments'
+[0m13:52:07.102899 [debug] [Thread-1 (]: Began compiling node model.olist_project.stg_customers__customers
+[0m13:52:07.104895 [debug] [Thread-2 (]: Began compiling node model.olist_project.stg_order_items__order_items
+[0m13:52:07.105893 [debug] [Thread-3 (]: Began compiling node model.olist_project.stg_orders__orders
+[0m13:52:07.107887 [debug] [Thread-4 (]: Began compiling node model.olist_project.stg_payments__payments
+[0m13:52:07.122846 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_project.stg_customers__customers"
+[0m13:52:07.127834 [debug] [Thread-2 (]: Writing injected SQL for node "model.olist_project.stg_order_items__order_items"
+[0m13:52:07.137912 [debug] [Thread-3 (]: Writing injected SQL for node "model.olist_project.stg_orders__orders"
+[0m13:52:07.145883 [debug] [Thread-4 (]: Writing injected SQL for node "model.olist_project.stg_payments__payments"
+[0m13:52:07.148875 [debug] [Thread-1 (]: Timing info for model.olist_project.stg_customers__customers (compile): 13:52:07.107887 => 13:52:07.147879
+[0m13:52:07.150870 [debug] [Thread-2 (]: Timing info for model.olist_project.stg_order_items__order_items (compile): 13:52:07.122846 => 13:52:07.149873
+[0m13:52:07.152864 [debug] [Thread-3 (]: Timing info for model.olist_project.stg_orders__orders (compile): 13:52:07.128831 => 13:52:07.152864
+[0m13:52:07.153862 [debug] [Thread-1 (]: Began executing node model.olist_project.stg_customers__customers
+[0m13:52:07.155857 [debug] [Thread-2 (]: Began executing node model.olist_project.stg_order_items__order_items
+[0m13:52:07.156855 [debug] [Thread-4 (]: Timing info for model.olist_project.stg_payments__payments (compile): 13:52:07.138903 => 13:52:07.155857
+[0m13:52:07.157851 [debug] [Thread-3 (]: Began executing node model.olist_project.stg_orders__orders
+[0m13:52:07.158850 [debug] [Thread-1 (]: Timing info for model.olist_project.stg_customers__customers (execute): 13:52:07.158850 => 13:52:07.158850
+[0m13:52:07.160844 [debug] [Thread-2 (]: Timing info for model.olist_project.stg_order_items__order_items (execute): 13:52:07.159846 => 13:52:07.159846
+[0m13:52:07.162838 [debug] [Thread-4 (]: Began executing node model.olist_project.stg_payments__payments
+[0m13:52:07.163836 [debug] [Thread-3 (]: Timing info for model.olist_project.stg_orders__orders (execute): 13:52:07.163836 => 13:52:07.163836
+[0m13:52:07.165830 [debug] [Thread-1 (]: Finished running node model.olist_project.stg_customers__customers
+[0m13:52:07.167824 [debug] [Thread-2 (]: Finished running node model.olist_project.stg_order_items__order_items
+[0m13:52:07.169819 [debug] [Thread-4 (]: Timing info for model.olist_project.stg_payments__payments (execute): 13:52:07.168821 => 13:52:07.168821
+[0m13:52:07.170819 [debug] [Thread-3 (]: Finished running node model.olist_project.stg_orders__orders
+[0m13:52:07.172811 [debug] [Thread-1 (]: Began running node model.olist_project.stg_products__products
+[0m13:52:07.173808 [debug] [Thread-2 (]: Began running node model.olist_project.stg_sellers__sellers
+[0m13:52:07.175804 [debug] [Thread-4 (]: Finished running node model.olist_project.stg_payments__payments
+[0m13:52:07.177798 [debug] [Thread-3 (]: Began running node seed.olist_project.olist_customers_dataset
+[0m13:52:07.179793 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_customers__customers, now model.olist_project.stg_products__products)
+[0m13:52:07.181788 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_order_items__order_items, now model.olist_project.stg_sellers__sellers)
+[0m13:52:07.182785 [debug] [Thread-4 (]: Began running node seed.olist_project.olist_geolocation_dataset
+[0m13:52:07.184779 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_orders__orders, now seed.olist_project.olist_customers_dataset)
+[0m13:52:07.185777 [debug] [Thread-1 (]: Began compiling node model.olist_project.stg_products__products
+[0m13:52:07.186773 [debug] [Thread-2 (]: Began compiling node model.olist_project.stg_sellers__sellers
+[0m13:52:07.187771 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_payments__payments, now seed.olist_project.olist_geolocation_dataset)
+[0m13:52:07.189766 [debug] [Thread-3 (]: Began compiling node seed.olist_project.olist_customers_dataset
+[0m13:52:07.196747 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_project.stg_products__products"
+[0m13:52:07.201733 [debug] [Thread-2 (]: Writing injected SQL for node "model.olist_project.stg_sellers__sellers"
+[0m13:52:07.202731 [debug] [Thread-4 (]: Began compiling node seed.olist_project.olist_geolocation_dataset
+[0m13:52:07.206721 [debug] [Thread-3 (]: Timing info for seed.olist_project.olist_customers_dataset (compile): 13:52:07.203728 => 13:52:07.206721
+[0m13:52:07.211710 [debug] [Thread-4 (]: Timing info for seed.olist_project.olist_geolocation_dataset (compile): 13:52:07.208714 => 13:52:07.211710
+[0m13:52:07.212821 [debug] [Thread-1 (]: Timing info for model.olist_project.stg_products__products (compile): 13:52:07.190764 => 13:52:07.212821
+[0m13:52:07.213820 [debug] [Thread-3 (]: Began executing node seed.olist_project.olist_customers_dataset
+[0m13:52:07.215814 [debug] [Thread-2 (]: Timing info for model.olist_project.stg_sellers__sellers (compile): 13:52:07.197744 => 13:52:07.214820
+[0m13:52:07.215814 [debug] [Thread-4 (]: Began executing node seed.olist_project.olist_geolocation_dataset
+[0m13:52:07.217809 [debug] [Thread-1 (]: Began executing node model.olist_project.stg_products__products
+[0m13:52:07.218806 [debug] [Thread-3 (]: Timing info for seed.olist_project.olist_customers_dataset (execute): 13:52:07.217809 => 13:52:07.217809
+[0m13:52:07.219805 [debug] [Thread-2 (]: Began executing node model.olist_project.stg_sellers__sellers
+[0m13:52:07.219805 [debug] [Thread-4 (]: Timing info for seed.olist_project.olist_geolocation_dataset (execute): 13:52:07.219805 => 13:52:07.219805
+[0m13:52:07.219805 [debug] [Thread-1 (]: Timing info for model.olist_project.stg_products__products (execute): 13:52:07.219805 => 13:52:07.219805
+[0m13:52:07.219805 [debug] [Thread-3 (]: Finished running node seed.olist_project.olist_customers_dataset
+[0m13:52:07.219805 [debug] [Thread-2 (]: Timing info for model.olist_project.stg_sellers__sellers (execute): 13:52:07.219805 => 13:52:07.219805
+[0m13:52:07.219805 [debug] [Thread-4 (]: Finished running node seed.olist_project.olist_geolocation_dataset
+[0m13:52:07.229653 [debug] [Thread-1 (]: Finished running node model.olist_project.stg_products__products
+[0m13:52:07.230649 [debug] [Thread-3 (]: Began running node seed.olist_project.olist_order_items_dataset
+[0m13:52:07.232645 [debug] [Thread-2 (]: Finished running node model.olist_project.stg_sellers__sellers
+[0m13:52:07.234639 [debug] [Thread-4 (]: Began running node seed.olist_project.olist_order_payments_dataset
+[0m13:52:07.235636 [debug] [Thread-1 (]: Began running node seed.olist_project.olist_order_reviews_dataset
+[0m13:52:07.236640 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.olist_project.olist_customers_dataset, now seed.olist_project.olist_order_items_dataset)
+[0m13:52:07.238253 [debug] [Thread-2 (]: Began running node seed.olist_project.olist_orders_dataset
+[0m13:52:07.240241 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.olist_project.olist_geolocation_dataset, now seed.olist_project.olist_order_payments_dataset)
+[0m13:52:07.241359 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_products__products, now seed.olist_project.olist_order_reviews_dataset)
+[0m13:52:07.242357 [debug] [Thread-3 (]: Began compiling node seed.olist_project.olist_order_items_dataset
+[0m13:52:07.244351 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.olist_project.stg_sellers__sellers, now seed.olist_project.olist_orders_dataset)
+[0m13:52:07.245349 [debug] [Thread-4 (]: Began compiling node seed.olist_project.olist_order_payments_dataset
+[0m13:52:07.246346 [debug] [Thread-1 (]: Began compiling node seed.olist_project.olist_order_reviews_dataset
+[0m13:52:07.248340 [debug] [Thread-3 (]: Timing info for seed.olist_project.olist_order_items_dataset (compile): 13:52:07.246346 => 13:52:07.248340
+[0m13:52:07.250336 [debug] [Thread-2 (]: Began compiling node seed.olist_project.olist_orders_dataset
+[0m13:52:07.253327 [debug] [Thread-4 (]: Timing info for seed.olist_project.olist_order_payments_dataset (compile): 13:52:07.250336 => 13:52:07.252330
+[0m13:52:07.256319 [debug] [Thread-1 (]: Timing info for seed.olist_project.olist_order_reviews_dataset (compile): 13:52:07.253327 => 13:52:07.256319
+[0m13:52:07.257317 [debug] [Thread-3 (]: Began executing node seed.olist_project.olist_order_items_dataset
+[0m13:52:07.261306 [debug] [Thread-2 (]: Timing info for seed.olist_project.olist_orders_dataset (compile): 13:52:07.257317 => 13:52:07.260310
+[0m13:52:07.262408 [debug] [Thread-4 (]: Began executing node seed.olist_project.olist_order_payments_dataset
+[0m13:52:07.263407 [debug] [Thread-1 (]: Began executing node seed.olist_project.olist_order_reviews_dataset
+[0m13:52:07.264405 [debug] [Thread-3 (]: Timing info for seed.olist_project.olist_order_items_dataset (execute): 13:52:07.264405 => 13:52:07.264405
+[0m13:52:07.265402 [debug] [Thread-2 (]: Began executing node seed.olist_project.olist_orders_dataset
+[0m13:52:07.266542 [debug] [Thread-4 (]: Timing info for seed.olist_project.olist_order_payments_dataset (execute): 13:52:07.266542 => 13:52:07.266542
+[0m13:52:07.267538 [debug] [Thread-1 (]: Timing info for seed.olist_project.olist_order_reviews_dataset (execute): 13:52:07.267538 => 13:52:07.267538
+[0m13:52:07.269533 [debug] [Thread-3 (]: Finished running node seed.olist_project.olist_order_items_dataset
+[0m13:52:07.270530 [debug] [Thread-2 (]: Timing info for seed.olist_project.olist_orders_dataset (execute): 13:52:07.270530 => 13:52:07.270530
+[0m13:52:07.272526 [debug] [Thread-4 (]: Finished running node seed.olist_project.olist_order_payments_dataset
+[0m13:52:07.274520 [debug] [Thread-1 (]: Finished running node seed.olist_project.olist_order_reviews_dataset
+[0m13:52:07.275517 [debug] [Thread-3 (]: Began running node seed.olist_project.olist_products_dataset
+[0m13:52:07.283998 [debug] [Thread-2 (]: Finished running node seed.olist_project.olist_orders_dataset
+[0m13:52:07.284996 [debug] [Thread-4 (]: Began running node seed.olist_project.olist_sellers_dataset
+[0m13:52:07.285993 [debug] [Thread-1 (]: Began running node seed.olist_project.product_category_name_translation
+[0m13:52:07.287080 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.olist_project.olist_order_items_dataset, now seed.olist_project.olist_products_dataset)
+[0m13:52:07.288985 [debug] [Thread-2 (]: Began running node test.olist_project.not_null_stg_customers__customers_customer_id.e1f660dc57
+[0m13:52:07.289983 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.olist_project.olist_order_payments_dataset, now seed.olist_project.olist_sellers_dataset)
+[0m13:52:07.292976 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.olist_project.olist_order_reviews_dataset, now seed.olist_project.product_category_name_translation)
+[0m13:52:07.294971 [debug] [Thread-3 (]: Began compiling node seed.olist_project.olist_products_dataset
+[0m13:52:07.296965 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.olist_project.olist_orders_dataset, now test.olist_project.not_null_stg_customers__customers_customer_id.e1f660dc57)
+[0m13:52:07.297995 [debug] [Thread-4 (]: Began compiling node seed.olist_project.olist_sellers_dataset
+[0m13:52:07.298959 [debug] [Thread-1 (]: Began compiling node seed.olist_project.product_category_name_translation
+[0m13:52:07.301989 [debug] [Thread-3 (]: Timing info for seed.olist_project.olist_products_dataset (compile): 13:52:07.299956 => 13:52:07.301989
+[0m13:52:07.302947 [debug] [Thread-2 (]: Began compiling node test.olist_project.not_null_stg_customers__customers_customer_id.e1f660dc57
+[0m13:52:07.305973 [debug] [Thread-4 (]: Timing info for seed.olist_project.olist_sellers_dataset (compile): 13:52:07.303946 => 13:52:07.304979
+[0m13:52:07.309930 [debug] [Thread-1 (]: Timing info for seed.olist_project.product_category_name_translation (compile): 13:52:07.306975 => 13:52:07.308940
+[0m13:52:07.310926 [debug] [Thread-3 (]: Began executing node seed.olist_project.olist_products_dataset
+[0m13:52:07.332140 [debug] [Thread-2 (]: Writing injected SQL for node "test.olist_project.not_null_stg_customers__customers_customer_id.e1f660dc57"
+[0m13:52:07.333138 [debug] [Thread-4 (]: Began executing node seed.olist_project.olist_sellers_dataset
+[0m13:52:07.334148 [debug] [Thread-1 (]: Began executing node seed.olist_project.product_category_name_translation
+[0m13:52:07.335133 [debug] [Thread-3 (]: Timing info for seed.olist_project.olist_products_dataset (execute): 13:52:07.335133 => 13:52:07.335133
+[0m13:52:07.337306 [debug] [Thread-4 (]: Timing info for seed.olist_project.olist_sellers_dataset (execute): 13:52:07.336158 => 13:52:07.336158
+[0m13:52:07.339123 [debug] [Thread-1 (]: Timing info for seed.olist_project.product_category_name_translation (execute): 13:52:07.338124 => 13:52:07.338124
+[0m13:52:07.340121 [debug] [Thread-2 (]: Timing info for test.olist_project.not_null_stg_customers__customers_customer_id.e1f660dc57 (compile): 13:52:07.312052 => 13:52:07.340121
+[0m13:52:07.342143 [debug] [Thread-3 (]: Finished running node seed.olist_project.olist_products_dataset
+[0m13:52:07.344559 [debug] [Thread-4 (]: Finished running node seed.olist_project.olist_sellers_dataset
+[0m13:52:07.346592 [debug] [Thread-1 (]: Finished running node seed.olist_project.product_category_name_translation
+[0m13:52:07.347551 [debug] [Thread-2 (]: Began executing node test.olist_project.not_null_stg_customers__customers_customer_id.e1f660dc57
+[0m13:52:07.348549 [debug] [Thread-3 (]: Began running node test.olist_project.unique_stg_customers__customers_customer_id.1950433078
+[0m13:52:07.349546 [debug] [Thread-4 (]: Began running node test.olist_project.not_null_stg_order_items__order_items_order_item_id.0e478d2e7d
+[0m13:52:07.350569 [debug] [Thread-1 (]: Began running node test.olist_project.not_null_stg_orders__orders_customer_id.b4e62b4cec
+[0m13:52:07.352577 [debug] [Thread-2 (]: Timing info for test.olist_project.not_null_stg_customers__customers_customer_id.e1f660dc57 (execute): 13:52:07.351542 => 13:52:07.351542
+[0m13:52:07.353535 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.olist_project.olist_products_dataset, now test.olist_project.unique_stg_customers__customers_customer_id.1950433078)
+[0m13:52:07.354532 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.olist_project.olist_sellers_dataset, now test.olist_project.not_null_stg_order_items__order_items_order_item_id.0e478d2e7d)
+[0m13:52:07.356528 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.olist_project.product_category_name_translation, now test.olist_project.not_null_stg_orders__orders_customer_id.b4e62b4cec)
+[0m13:52:07.358558 [debug] [Thread-2 (]: Finished running node test.olist_project.not_null_stg_customers__customers_customer_id.e1f660dc57
+[0m13:52:07.360517 [debug] [Thread-3 (]: Began compiling node test.olist_project.unique_stg_customers__customers_customer_id.1950433078
+[0m13:52:07.361514 [debug] [Thread-4 (]: Began compiling node test.olist_project.not_null_stg_order_items__order_items_order_item_id.0e478d2e7d
+[0m13:52:07.362632 [debug] [Thread-1 (]: Began compiling node test.olist_project.not_null_stg_orders__orders_customer_id.b4e62b4cec
+[0m13:52:07.363630 [debug] [Thread-2 (]: Began running node test.olist_project.not_null_stg_orders__orders_order_id.16a70c1bcb
+[0m13:52:07.378733 [debug] [Thread-3 (]: Writing injected SQL for node "test.olist_project.unique_stg_customers__customers_customer_id.1950433078"
+[0m13:52:07.384714 [debug] [Thread-4 (]: Writing injected SQL for node "test.olist_project.not_null_stg_order_items__order_items_order_item_id.0e478d2e7d"
+[0m13:52:07.392455 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_project.not_null_stg_orders__orders_customer_id.b4e62b4cec"
+[0m13:52:07.393451 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.olist_project.not_null_stg_customers__customers_customer_id.e1f660dc57, now test.olist_project.not_null_stg_orders__orders_order_id.16a70c1bcb)
+[0m13:52:07.396447 [debug] [Thread-3 (]: Timing info for test.olist_project.unique_stg_customers__customers_customer_id.1950433078 (compile): 13:52:07.364663 => 13:52:07.395445
+[0m13:52:07.398440 [debug] [Thread-2 (]: Began compiling node test.olist_project.not_null_stg_orders__orders_order_id.16a70c1bcb
+[0m13:52:07.399437 [debug] [Thread-4 (]: Timing info for test.olist_project.not_null_stg_order_items__order_items_order_item_id.0e478d2e7d (compile): 13:52:07.379694 => 13:52:07.398440
+[0m13:52:07.401430 [debug] [Thread-3 (]: Began executing node test.olist_project.unique_stg_customers__customers_customer_id.1950433078
+[0m13:52:07.402429 [debug] [Thread-1 (]: Timing info for test.olist_project.not_null_stg_orders__orders_customer_id.b4e62b4cec (compile): 13:52:07.385676 => 13:52:07.401430
+[0m13:52:07.412550 [debug] [Thread-2 (]: Writing injected SQL for node "test.olist_project.not_null_stg_orders__orders_order_id.16a70c1bcb"
+[0m13:52:07.413549 [debug] [Thread-4 (]: Began executing node test.olist_project.not_null_stg_order_items__order_items_order_item_id.0e478d2e7d
+[0m13:52:07.414547 [debug] [Thread-3 (]: Timing info for test.olist_project.unique_stg_customers__customers_customer_id.1950433078 (execute): 13:52:07.414547 => 13:52:07.414547
+[0m13:52:07.415545 [debug] [Thread-1 (]: Began executing node test.olist_project.not_null_stg_orders__orders_customer_id.b4e62b4cec
+[0m13:52:07.417750 [debug] [Thread-4 (]: Timing info for test.olist_project.not_null_stg_order_items__order_items_order_item_id.0e478d2e7d (execute): 13:52:07.416750 => 13:52:07.416750
+[0m13:52:07.419744 [debug] [Thread-3 (]: Finished running node test.olist_project.unique_stg_customers__customers_customer_id.1950433078
+[0m13:52:07.420778 [debug] [Thread-2 (]: Timing info for test.olist_project.not_null_stg_orders__orders_order_id.16a70c1bcb (compile): 13:52:07.403426 => 13:52:07.420778
+[0m13:52:07.421737 [debug] [Thread-1 (]: Timing info for test.olist_project.not_null_stg_orders__orders_customer_id.b4e62b4cec (execute): 13:52:07.421737 => 13:52:07.421737
+[0m13:52:07.423732 [debug] [Thread-4 (]: Finished running node test.olist_project.not_null_stg_order_items__order_items_order_item_id.0e478d2e7d
+[0m13:52:07.424729 [debug] [Thread-3 (]: Began running node test.olist_project.unique_stg_orders__orders_order_id.6aa4906960
+[0m13:52:07.425764 [debug] [Thread-2 (]: Began executing node test.olist_project.not_null_stg_orders__orders_order_id.16a70c1bcb
+[0m13:52:07.428756 [debug] [Thread-1 (]: Finished running node test.olist_project.not_null_stg_orders__orders_customer_id.b4e62b4cec
+[0m13:52:07.428756 [debug] [Thread-4 (]: Began running node model.olist_project.fct_orders
+[0m13:52:07.430713 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.olist_project.unique_stg_customers__customers_customer_id.1950433078, now test.olist_project.unique_stg_orders__orders_order_id.6aa4906960)
+[0m13:52:07.431711 [debug] [Thread-2 (]: Timing info for test.olist_project.not_null_stg_orders__orders_order_id.16a70c1bcb (execute): 13:52:07.431711 => 13:52:07.431711
+[0m13:52:07.433706 [debug] [Thread-1 (]: Began running node test.olist_project.not_null_stg_payments__payments_order_id.444a8c02a2
+[0m13:52:07.434703 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.olist_project.not_null_stg_order_items__order_items_order_item_id.0e478d2e7d, now model.olist_project.fct_orders)
+[0m13:52:07.435699 [debug] [Thread-3 (]: Began compiling node test.olist_project.unique_stg_orders__orders_order_id.6aa4906960
+[0m13:52:07.437843 [debug] [Thread-2 (]: Finished running node test.olist_project.not_null_stg_orders__orders_order_id.16a70c1bcb
+[0m13:52:07.439831 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_project.not_null_stg_orders__orders_customer_id.b4e62b4cec, now test.olist_project.not_null_stg_payments__payments_order_id.444a8c02a2)
+[0m13:52:07.440830 [debug] [Thread-4 (]: Began compiling node model.olist_project.fct_orders
+[0m13:52:07.448931 [debug] [Thread-3 (]: Writing injected SQL for node "test.olist_project.unique_stg_orders__orders_order_id.6aa4906960"
+[0m13:52:07.449926 [debug] [Thread-2 (]: Began running node test.olist_project.not_null_stg_products__products_product_id.24f0101a0d
+[0m13:52:07.450957 [debug] [Thread-1 (]: Began compiling node test.olist_project.not_null_stg_payments__payments_order_id.444a8c02a2
+[0m13:52:07.455946 [debug] [Thread-4 (]: Writing injected SQL for node "model.olist_project.fct_orders"
+[0m13:52:07.458902 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.olist_project.not_null_stg_orders__orders_order_id.16a70c1bcb, now test.olist_project.not_null_stg_products__products_product_id.24f0101a0d)
+[0m13:52:07.467025 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_project.not_null_stg_payments__payments_order_id.444a8c02a2"
+[0m13:52:07.468022 [debug] [Thread-3 (]: Timing info for test.olist_project.unique_stg_orders__orders_order_id.6aa4906960 (compile): 13:52:07.441865 => 13:52:07.468022
+[0m13:52:07.470018 [debug] [Thread-2 (]: Began compiling node test.olist_project.not_null_stg_products__products_product_id.24f0101a0d
+[0m13:52:07.472015 [debug] [Thread-4 (]: Timing info for model.olist_project.fct_orders (compile): 13:52:07.451921 => 13:52:07.471025
+[0m13:52:07.473008 [debug] [Thread-3 (]: Began executing node test.olist_project.unique_stg_orders__orders_order_id.6aa4906960
+[0m13:52:07.481022 [debug] [Thread-2 (]: Writing injected SQL for node "test.olist_project.not_null_stg_products__products_product_id.24f0101a0d"
+[0m13:52:07.482016 [debug] [Thread-1 (]: Timing info for test.olist_project.not_null_stg_payments__payments_order_id.444a8c02a2 (compile): 13:52:07.458902 => 13:52:07.482016
+[0m13:52:07.483017 [debug] [Thread-4 (]: Began executing node model.olist_project.fct_orders
+[0m13:52:07.483978 [debug] [Thread-3 (]: Timing info for test.olist_project.unique_stg_orders__orders_order_id.6aa4906960 (execute): 13:52:07.483978 => 13:52:07.483978
+[0m13:52:07.485973 [debug] [Thread-1 (]: Began executing node test.olist_project.not_null_stg_payments__payments_order_id.444a8c02a2
+[0m13:52:07.486972 [debug] [Thread-4 (]: Timing info for model.olist_project.fct_orders (execute): 13:52:07.486972 => 13:52:07.486972
+[0m13:52:07.488971 [debug] [Thread-2 (]: Timing info for test.olist_project.not_null_stg_products__products_product_id.24f0101a0d (compile): 13:52:07.474008 => 13:52:07.487975
+[0m13:52:07.490995 [debug] [Thread-3 (]: Finished running node test.olist_project.unique_stg_orders__orders_order_id.6aa4906960
+[0m13:52:07.491959 [debug] [Thread-1 (]: Timing info for test.olist_project.not_null_stg_payments__payments_order_id.444a8c02a2 (execute): 13:52:07.490995 => 13:52:07.491959
+[0m13:52:07.493988 [debug] [Thread-4 (]: Finished running node model.olist_project.fct_orders
+[0m13:52:07.494951 [debug] [Thread-2 (]: Began executing node test.olist_project.not_null_stg_products__products_product_id.24f0101a0d
+[0m13:52:07.496947 [debug] [Thread-3 (]: Began running node test.olist_project.unique_stg_products__products_product_id.380ababbc0
+[0m13:52:07.497943 [debug] [Thread-1 (]: Finished running node test.olist_project.not_null_stg_payments__payments_order_id.444a8c02a2
+[0m13:52:07.499938 [debug] [Thread-4 (]: Began running node model.olist_project.dim_sellers
+[0m13:52:07.500933 [debug] [Thread-2 (]: Timing info for test.olist_project.not_null_stg_products__products_product_id.24f0101a0d (execute): 13:52:07.499938 => 13:52:07.499938
+[0m13:52:07.501931 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.olist_project.unique_stg_orders__orders_order_id.6aa4906960, now test.olist_project.unique_stg_products__products_product_id.380ababbc0)
+[0m13:52:07.502928 [debug] [Thread-1 (]: Began running node test.olist_project.not_null_stg_sellers__sellers_seller_id.27a3835ddf
+[0m13:52:07.504923 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.olist_project.fct_orders, now model.olist_project.dim_sellers)
+[0m13:52:07.505953 [debug] [Thread-2 (]: Finished running node test.olist_project.not_null_stg_products__products_product_id.24f0101a0d
+[0m13:52:07.507916 [debug] [Thread-3 (]: Began compiling node test.olist_project.unique_stg_products__products_product_id.380ababbc0
+[0m13:52:07.508933 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.olist_project.not_null_stg_payments__payments_order_id.444a8c02a2, now test.olist_project.not_null_stg_sellers__sellers_seller_id.27a3835ddf)
+[0m13:52:07.510907 [debug] [Thread-4 (]: Began compiling node model.olist_project.dim_sellers
+[0m13:52:07.512011 [debug] [Thread-2 (]: Began running node test.olist_project.unique_stg_sellers__sellers_seller_id.fef548536a
+[0m13:52:07.519031 [debug] [Thread-3 (]: Writing injected SQL for node "test.olist_project.unique_stg_products__products_product_id.380ababbc0"
+[0m13:52:07.519993 [debug] [Thread-1 (]: Began compiling node test.olist_project.not_null_stg_sellers__sellers_seller_id.27a3835ddf
+[0m13:52:07.527008 [debug] [Thread-4 (]: Writing injected SQL for node "model.olist_project.dim_sellers"
+[0m13:52:07.527968 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.olist_project.not_null_stg_products__products_product_id.24f0101a0d, now test.olist_project.unique_stg_sellers__sellers_seller_id.fef548536a)
+[0m13:52:07.537087 [debug] [Thread-1 (]: Writing injected SQL for node "test.olist_project.not_null_stg_sellers__sellers_seller_id.27a3835ddf"
+[0m13:52:07.538940 [debug] [Thread-3 (]: Timing info for test.olist_project.unique_stg_products__products_product_id.380ababbc0 (compile): 13:52:07.513009 => 13:52:07.537979
+[0m13:52:07.540935 [debug] [Thread-2 (]: Began compiling node test.olist_project.unique_stg_sellers__sellers_seller_id.fef548536a
+[0m13:52:07.542054 [debug] [Thread-4 (]: Timing info for model.olist_project.dim_sellers (compile): 13:52:07.520990 => 13:52:07.542054
+[0m13:52:07.544051 [debug] [Thread-3 (]: Began executing node test.olist_project.unique_stg_products__products_product_id.380ababbc0
+[0m13:52:07.545049 [debug] [Thread-1 (]: Timing info for test.olist_project.not_null_stg_sellers__sellers_seller_id.27a3835ddf (compile): 13:52:07.529964 => 13:52:07.544051
+[0m13:52:07.553062 [debug] [Thread-2 (]: Writing injected SQL for node "test.olist_project.unique_stg_sellers__sellers_seller_id.fef548536a"
+[0m13:52:07.554058 [debug] [Thread-4 (]: Began executing node model.olist_project.dim_sellers
+[0m13:52:07.556058 [debug] [Thread-3 (]: Timing info for test.olist_project.unique_stg_products__products_product_id.380ababbc0 (execute): 13:52:07.555023 => 13:52:07.555023
+[0m13:52:07.557016 [debug] [Thread-1 (]: Began executing node test.olist_project.not_null_stg_sellers__sellers_seller_id.27a3835ddf
+[0m13:52:07.559010 [debug] [Thread-4 (]: Timing info for model.olist_project.dim_sellers (execute): 13:52:07.558014 => 13:52:07.558014
+[0m13:52:07.561004 [debug] [Thread-2 (]: Timing info for test.olist_project.unique_stg_sellers__sellers_seller_id.fef548536a (compile): 13:52:07.546049 => 13:52:07.560007
+[0m13:52:07.563131 [debug] [Thread-3 (]: Finished running node test.olist_project.unique_stg_products__products_product_id.380ababbc0
+[0m13:52:07.564129 [debug] [Thread-1 (]: Timing info for test.olist_project.not_null_stg_sellers__sellers_seller_id.27a3835ddf (execute): 13:52:07.564129 => 13:52:07.564129
+[0m13:52:07.566123 [debug] [Thread-4 (]: Finished running node model.olist_project.dim_sellers
+[0m13:52:07.567246 [debug] [Thread-2 (]: Began executing node test.olist_project.unique_stg_sellers__sellers_seller_id.fef548536a
+[0m13:52:07.568117 [debug] [Thread-3 (]: Began running node model.olist_project.dim_customers
+[0m13:52:07.570149 [debug] [Thread-1 (]: Finished running node test.olist_project.not_null_stg_sellers__sellers_seller_id.27a3835ddf
+[0m13:52:07.572108 [debug] [Thread-2 (]: Timing info for test.olist_project.unique_stg_sellers__sellers_seller_id.fef548536a (execute): 13:52:07.572108 => 13:52:07.572108
+[0m13:52:07.574135 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.olist_project.unique_stg_products__products_product_id.380ababbc0, now model.olist_project.dim_customers)
+[0m13:52:07.576097 [debug] [Thread-2 (]: Finished running node test.olist_project.unique_stg_sellers__sellers_seller_id.fef548536a
+[0m13:52:07.577107 [debug] [Thread-3 (]: Began compiling node model.olist_project.dim_customers
+[0m13:52:07.584076 [debug] [Thread-3 (]: Writing injected SQL for node "model.olist_project.dim_customers"
+[0m13:52:07.586069 [debug] [Thread-3 (]: Timing info for model.olist_project.dim_customers (compile): 13:52:07.579089 => 13:52:07.585073
+[0m13:52:07.587068 [debug] [Thread-3 (]: Began executing node model.olist_project.dim_customers
+[0m13:52:07.588066 [debug] [Thread-3 (]: Timing info for model.olist_project.dim_customers (execute): 13:52:07.588066 => 13:52:07.588066
+[0m13:52:07.590062 [debug] [Thread-3 (]: Finished running node model.olist_project.dim_customers
+[0m13:52:07.592253 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:52:07.593290 [debug] [MainThread]: Connection 'list_olist_analytics' was properly closed.
+[0m13:52:07.594249 [debug] [MainThread]: Connection 'list_olist_analytics_marts' was properly closed.
+[0m13:52:07.595247 [debug] [MainThread]: Connection 'list_olist_analytics_staging' was properly closed.
+[0m13:52:07.596247 [debug] [MainThread]: Connection 'test.olist_project.not_null_stg_sellers__sellers_seller_id.27a3835ddf' was properly closed.
+[0m13:52:07.597276 [debug] [MainThread]: Connection 'test.olist_project.unique_stg_sellers__sellers_seller_id.fef548536a' was properly closed.
+[0m13:52:07.598240 [debug] [MainThread]: Connection 'model.olist_project.dim_customers' was properly closed.
+[0m13:52:07.599236 [debug] [MainThread]: Connection 'model.olist_project.dim_sellers' was properly closed.
+[0m13:52:07.610205 [debug] [MainThread]: Command end result
+[0m13:52:12.391320 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m13:52:12.392456 [info ] [MainThread]: Building catalog
+[0m13:52:12.484213 [debug] [ThreadPool]: Acquiring new duckdb connection 'olist.information_schema'
+[0m13:52:12.596999 [debug] [ThreadPool]: Using duckdb connection "olist.information_schema"
+[0m13:52:12.598994 [debug] [ThreadPool]: On olist.information_schema: BEGIN
+[0m13:52:12.600988 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:52:12.614950 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:52:12.615948 [debug] [ThreadPool]: Using duckdb connection "olist.information_schema"
+[0m13:52:12.616945 [debug] [ThreadPool]: On olist.information_schema: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "olist_project", "target_name": "dev", "connection_name": "olist.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'olist'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'olist'
+    )
+    select
+        'olist' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        '' as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('analytics_staging') or upper(r.schema_name) = upper('main') or upper(r.schema_name) = upper('analytics') or upper(r.schema_name) = upper('analytics_marts'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m13:52:12.717315 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m13:52:12.767466 [debug] [ThreadPool]: On olist.information_schema: ROLLBACK
+[0m13:52:12.768476 [debug] [ThreadPool]: Failed to rollback 'olist.information_schema'
+[0m13:52:12.769461 [debug] [ThreadPool]: On olist.information_schema: Close
+[0m13:52:12.819328 [info ] [MainThread]: Catalog written to C:\kev\Olist Ecommerce\olist\target\catalog.json
+[0m13:52:12.822319 [debug] [MainThread]: Command `dbt docs generate` succeeded at 13:52:12.821322 after 6.71 seconds
+[0m13:52:12.822319 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m13:52:12.823316 [debug] [MainThread]: Connection 'olist.information_schema' was properly closed.
+[0m13:52:12.825310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211D36C5D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211CD0BA010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211CD0B9A90>]}
+[0m13:52:12.826309 [debug] [MainThread]: Flushing usage events
+[0m13:54:35.344595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A09746BB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A097469410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A09746AE10>]}
+
+
+============================== 13:54:35.351095 | c35d960b-f3c9-48e6-b5fc-e8948755edf5 ==============================
+[0m13:54:35.351095 [info ] [MainThread]: Running with dbt=1.7.9
+[0m13:54:35.353090 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Evans Moseti\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'log_path': 'C:\\kev\\Olist Ecommerce\\olist\\logs'}
+[0m13:54:35.574350 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m13:54:35.576347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c35d960b-f3c9-48e6-b5fc-e8948755edf5', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0975DA690>]}
+[0m13:54:35.747869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c35d960b-f3c9-48e6-b5fc-e8948755edf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A097507ED0>]}
+[0m13:54:35.894360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c35d960b-f3c9-48e6-b5fc-e8948755edf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0974C6FD0>]}
+[0m14:01:50.255267 [error] [MainThread]: Encountered an error:
+
+[0m14:01:50.410488 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\kev\Olist Ecommerce\olist\venv\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\kev\Olist Ecommerce\olist\venv\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\kev\Olist Ecommerce\olist\venv\Lib\site-packages\dbt\cli\requires.py", line 169, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\kev\Olist Ecommerce\olist\venv\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\kev\Olist Ecommerce\olist\venv\Lib\site-packages\dbt\cli\requires.py", line 245, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\kev\Olist Ecommerce\olist\venv\Lib\site-packages\dbt\cli\main.py", line 324, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\kev\Olist Ecommerce\olist\venv\Lib\site-packages\dbt\task\serve.py", line 28, in run
+    httpd.serve_forever()
+  File "C:\Users\Evans Moseti\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Evans Moseti\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Evans Moseti\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m14:01:50.417470 [debug] [MainThread]: Command `dbt docs serve` failed at 14:01:50.417470 after 435.17 seconds
+[0m14:01:50.418467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A097474590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0974F0490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A098688090>]}
+[0m14:01:50.419463 [debug] [MainThread]: Flushing usage events
