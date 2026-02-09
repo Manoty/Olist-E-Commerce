@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_payments__payments
+    description: Payment records
+    columns:
+      - name: order_id
+        tests:
+          - not_null
