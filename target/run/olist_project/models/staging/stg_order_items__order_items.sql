@@ -16,7 +16,8 @@ select
   seller_id,
   shipping_limit_date,
   price,
-  freight_value
+  freight_value,
+  price + freight_value as item_total_value
 from "olist"."main"."raw_order_items"
     );
   
