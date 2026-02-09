@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_products__products
+    description: Product catalog
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null

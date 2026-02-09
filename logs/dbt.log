@@ -7827,3 +7827,32 @@ drop table if exists "olist"."analytics_staging"."stg_products__products__dbt_ba
 [0m13:15:31.844641 [debug] [MainThread]: Command `dbt run` succeeded at 13:15:31.843640 after 2.75 seconds
 [0m13:15:31.846631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E792A14910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E78C7C9D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E78C7C9990>]}
 [0m13:15:31.847637 [debug] [MainThread]: Flushing usage events
+[0m13:18:14.226815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF4483390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF3E0B150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF3F5D910>]}
+
+
+============================== 13:18:14.233772 | 57cd9ed7-c5d3-4203-a343-83be4a0338bc ==============================
+[0m13:18:14.233772 [info ] [MainThread]: Running with dbt=1.7.9
+[0m13:18:14.235768 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Evans Moseti\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt test', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\kev\\Olist Ecommerce\\olist\\logs'}
+[0m13:18:14.446215 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m13:18:14.448175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '57cd9ed7-c5d3-4203-a343-83be4a0338bc', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF45DDBD0>]}
+[0m13:18:14.612860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '57cd9ed7-c5d3-4203-a343-83be4a0338bc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF563EA10>]}
+[0m13:18:14.749420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '57cd9ed7-c5d3-4203-a343-83be4a0338bc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF449F6D0>]}
+[0m13:18:14.752414 [info ] [MainThread]: Registered adapter: duckdb=1.7.5
+[0m13:18:14.767411 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m13:18:14.872554 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:18:14.873588 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:18:14.874549 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.olist_project.marts
+[0m13:18:14.885519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '57cd9ed7-c5d3-4203-a343-83be4a0338bc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF5816810>]}
+[0m13:18:14.913780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '57cd9ed7-c5d3-4203-a343-83be4a0338bc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF4502950>]}
+[0m13:18:14.914778 [info ] [MainThread]: Found 9 seeds, 6 models, 9 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m13:18:14.916824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '57cd9ed7-c5d3-4203-a343-83be4a0338bc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF572F890>]}
+[0m13:18:14.921001 [info ] [MainThread]: 
+[0m13:18:14.922996 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:18:14.924989 [debug] [MainThread]: Command end result
+[0m13:18:14.941946 [debug] [MainThread]: Command `dbt test` succeeded at 13:18:14.940947 after 0.81 seconds
+[0m13:18:14.944936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF3F5D9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CF3C01DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028CED669990>]}
+[0m13:18:14.948928 [debug] [MainThread]: Flushing usage events

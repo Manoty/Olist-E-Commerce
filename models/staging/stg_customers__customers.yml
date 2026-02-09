@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_customers__customers
+    description: Customer dimension
+    columns:
+      - name: customer_id
+        description: Unique customer identifier
+        tests:
+          - unique
+          - not_null
