@@ -15,8 +15,9 @@ with source as (
     order_delivered_carrier_date,
     order_delivered_customer_date,
     order_estimated_delivery_date
-  from {{ source('olist', 'raw_orders') }}
+  from main.raw_orders
 )
+
 
 , cleaned as (
   select

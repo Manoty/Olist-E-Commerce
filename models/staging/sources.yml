@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: olist
+    description: Raw Olist Brazilian e-commerce dataset
+    schema: main
+    tables:
+      - name: raw_customers
+        description: Customer dimension with location info
+
+      - name: raw_orders
+        description: Orders with timestamps and status
+
+      - name: raw_order_items
+        description: Line items within orders
+
+      - name: raw_order_payments
+        description: Payment records (multiple per order possible)
+
+      - name: raw_order_reviews
+        description: Customer reviews and ratings
+
+      - name: raw_products
+        description: Product catalog
+
+      - name: raw_sellers
+        description: Seller information
+
+      - name: raw_geolocation
+        description: Brazilian geolocation reference
+
+      - name: raw_product_category_translation
+        description: Product category name translation
